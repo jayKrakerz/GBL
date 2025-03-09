@@ -1,0 +1,167 @@
+{% comment %}
+  GBL Accessories Testimonial Section
+  - Elegant customer review display
+  - 5-star rating
+  - Customer name and location information
+  - Clean, minimal design on light background
+{% endcomment %}
+
+{%- style -%}
+    .gbl-testimonial {
+      padding: 100px 20px;
+      background-color: #f8f6f1;
+      text-align: center;
+    }
+  
+    .gbl-testimonial__container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  
+    .gbl-testimonial__stars {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+  
+    .gbl-testimonial__star {
+      width: 24px;
+      height: 24px;
+      margin: 0 5px;
+      color: #000000;
+    }
+  
+    .gbl-testimonial__quote {
+      font-size: 26px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      font-weight: 400;
+      color: #333333;
+      font-style: italic;
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .gbl-testimonial__author {
+      font-size: 18px;
+      font-weight: 500;
+      color: #333333;
+      margin-bottom: 5px;
+    }
+  
+    .gbl-testimonial__location {
+      font-size: 16px;
+      color: #777777;
+    }
+  
+    @media screen and (max-width: 767px) {
+      .gbl-testimonial {
+        padding: 60px 20px;
+      }
+      
+      .gbl-testimonial__quote {
+        font-size: 20px;
+      }
+      
+      .gbl-testimonial__author {
+        font-size: 16px;
+      }
+      
+      .gbl-testimonial__location {
+        font-size: 14px;
+      }
+    }
+  {%- endstyle -%}
+  
+  <div class="gbl-testimonial">
+    <div class="gbl-testimonial__container">
+      <div class="gbl-testimonial__stars">
+        {% for i in (1..5) %}
+          <svg class="gbl-testimonial__star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"/>
+          </svg>
+        {% endfor %}
+      </div>
+      
+      <blockquote class="gbl-testimonial__quote">
+        {{ section.settings.quote }}
+      </blockquote>
+      
+      <div class="gbl-testimonial__author-info">
+        <div class="gbl-testimonial__author">{{ section.settings.author_name }}</div>
+        {% if section.settings.author_location != blank %}
+          <div class="gbl-testimonial__location">{{ section.settings.author_location }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  
+  {% schema %}
+  {
+    "name": "Testimonial",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "range",
+        "id": "star_rating",
+        "min": 1,
+        "max": 5,
+        "step": 1,
+        "label": "Star Rating",
+        "default": 5
+      },
+      {
+        "type": "textarea",
+        "id": "quote",
+        "label": "Testimonial Quote",
+        "default": "I really think that American gentlemen are the best after all, because kissing your hand may make you feel very good, but a diamond and a sapphire bracelet lasts forever"
+      },
+      {
+        "type": "text",
+        "id": "author_name",
+        "label": "Author Name",
+        "default": "Michal Brink"
+      },
+      {
+        "type": "text",
+        "id": "author_location",
+        "label": "Author Location",
+        "default": "Royal Ln. Mesa, New Jersey"
+      },
+      {
+        "type": "header",
+        "content": "Style Settings"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#f8f6f1"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#333333"
+      },
+      {
+        "type": "color",
+        "id": "star_color",
+        "label": "Star Color",
+        "default": "#000000"
+      }
+    ],
+    "presets": [
+      {
+        "name": "GBL Testimonial",
+        "settings": {
+          "quote": "I really think that American gentlemen are the best after all, because kissing your hand may make you feel very good, but a diamond and a sapphire bracelet lasts forever",
+          "author_name": "Michal Brink",
+          "author_location": "Royal Ln. Mesa, New Jersey"
+        }
+      }
+    ]
+  }
+  {% endschema %}

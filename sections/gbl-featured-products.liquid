@@ -1,0 +1,374 @@
+{% comment %}
+  GBL Accessories Featured Products
+  - Tabbed product display with category filtering
+  - Clean, minimal product cards with hover effects
+  - Price and sale price display
+  - Wishlist/favorite button
+{% endcomment %}
+
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .gbl-featured-products {
+    background-color: #ffffff;
+  }
+
+  .gbl-featured-products__container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .gbl-featured-products__header {
+    margin-bottom: 30px;
+  }
+
+  .gbl-featured-products__title {
+    font-size: 42px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    font-family: var(--font-heading-family);
+    color: #000000;
+  }
+
+  .gbl-featured-products__tabs {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  .gbl-featured-products__tab {
+    padding: 12px 25px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #888;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .gbl-featured-products__tab:hover {
+    color: #333;
+  }
+
+  .gbl-featured-products__tab.active {
+    color: #333;
+  }
+
+  .gbl-featured-products__tab.active:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #d4af37;
+  }
+
+  .gbl-featured-products__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .gbl-featured-products__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gbl-featured-products__image-wrapper {
+    position: relative;
+    padding-bottom: 100%;
+    background-color: #f7f4ef;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  .gbl-featured-products__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+  }
+
+  .gbl-featured-products__card:hover .gbl-featured-products__image {
+    transform: scale(1.05);
+  }
+
+  .gbl-featured-products__sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #d4af37;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  .gbl-featured-products__wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .gbl-featured-products__wishlist-icon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #888;
+    stroke-width: 1.5;
+    transition: all 0.3s ease;
+  }
+
+  .gbl-featured-products__wishlist:hover .gbl-featured-products__wishlist-icon {
+    stroke: #d4af37;
+  }
+
+  .gbl-featured-products__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gbl-featured-products__title-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .gbl-featured-products__product-title {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .price {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+
+  .price--on-sale .price__regular {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 10px;
+  }
+
+  .price__sale {
+    color: #d4af37;
+  }
+
+  .price-range {
+    display: flex;
+    align-items: center;
+  }
+
+  .price-range__dash {
+    margin: 0 5px;
+  }
+
+  @media screen and (max-width: 990px) {
+    .gbl-featured-products__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gbl-featured-products__tabs {
+      overflow-x: auto;
+      width: 100%;
+      padding-bottom: 10px;
+      justify-content: flex-start;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .gbl-featured-products__grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .gbl-featured-products__title {
+      font-size: 32px;
+    }
+  }
+{%- endstyle -%}
+
+{% comment %}
+  Modified code to strictly enforce product display limit
+{% endcomment %}
+
+{% comment %}
+  Modified code to enforce product display limit from customizer settings
+{% endcomment %}
+
+<div class="gbl-featured-products" id="gbl-featured-products-{{ section.id }}">
+  <div class="gbl-featured-products__container">
+    <div class="gbl-featured-products__header">
+      <h2 class="gbl-featured-products__title">{{ section.settings.title }}</h2>
+      
+      <ul class="gbl-featured-products__tabs">
+        <li class="gbl-featured-products__tab active" data-category="all">All</li>
+        {% for collection in section.settings.filter_collections %}
+          <li class="gbl-featured-products__tab" data-category="{{ collection.handle }}">{{ collection.title }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    
+    <div class="gbl-featured-products__grid">
+      {% comment %}
+      Get max products from section settings
+      {% endcomment %}
+      {% assign max_products = section.settings.products_count %}
+      {% assign all_products = section.settings.products_collection.products %}
+      
+      {% comment %}Limit products manually with a counter{% endcomment %}
+      {% assign product_count = 0 %}
+      {% for product in all_products %}
+        {% if product_count < max_products %}
+          {% assign product_collections = product.collections | map: 'handle' %}
+          
+          <div class="gbl-featured-products__card" data-product-collections="{{ product_collections | join: ' ' }}">
+            <div class="gbl-featured-products__image-wrapper">
+              {% if product.compare_at_price > product.price %}
+                <div class="gbl-featured-products__sale-badge">Sale!</div>
+              {% endif %}
+              
+              <button class="gbl-featured-products__wishlist" aria-label="Add to wishlist">
+                <svg class="gbl-featured-products__wishlist-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </button>
+              
+              <a href="{{ product.url }}">
+                {% if product.featured_image != blank %}
+                  {{ product.featured_image | img_url: '500x500' | img_tag: product.title, 'gbl-featured-products__image' }}
+                {% else %}
+                  {{ 'product-1' | placeholder_svg_tag: 'gbl-featured-products__image' }}
+                {% endif %}
+              </a>
+            </div>
+            
+            <div class="gbl-featured-products__info">
+              <a href="{{ product.url }}" class="gbl-featured-products__title-link">
+                <h3 class="gbl-featured-products__product-title">{{ product.title }}</h3>
+              </a>
+              
+              <div class="price {% if product.compare_at_price > product.price %}price--on-sale{% endif %}">
+                {% if product.price_varies %}
+                  <div class="price-range">
+                    <span class="price__regular">{{ product.price_min | money }}</span>
+                    <span class="price-range__dash">—</span>
+                    <span class="price__regular">{{ product.price_max | money }}</span>
+                  </div>
+                {% elsif product.compare_at_price > product.price %}
+                  <span class="price__regular">{{ product.compare_at_price | money }}</span>
+                  <span class="price__sale">{{ product.price | money }}</span>
+                {% else %}
+                  <span class="price__regular">{{ product.price | money }}</span>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          
+          {% comment %}Increment counter{% endcomment %}
+          {% assign product_count = product_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('gbl-featured-products-{{ section.id }}');
+    if (!container) return;
+    
+    const tabs = container.querySelectorAll('.gbl-featured-products__tab');
+    const products = container.querySelectorAll('.gbl-featured-products__card');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        // Remove active class from all tabs
+        tabs.forEach(t => t.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        this.classList.add('active');
+        
+        const category = this.getAttribute('data-category');
+        
+        // Filter products
+        products.forEach(product => {
+          if (category === 'all') {
+            product.style.display = 'flex';
+          } else {
+            const productCollections = product.getAttribute('data-product-collections');
+            if (productCollections && productCollections.includes(category)) {
+              product.style.display = 'flex';
+            } else {
+              product.style.display = 'none';
+            }
+          }
+        });
+      });
+    });
+  });
+</script>
+
+{% schema %}
+    {
+      "name": "Featured Products",
+      "tag": "section",
+      "class": "section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Section Title",
+          "default": "Our New Arrival"
+        },
+        {
+          "type": "collection",
+          "id": "products_collection",
+          "label": "Products Collection"
+        },
+        {
+          "type": "range",
+          "id": "products_count",
+          "min": 3,
+          "max": 12,
+          "step": 3,
+          "label": "Number of Products",
+          "default": 6
+        },
+        {
+          "type": "collection_list",
+          "id": "filter_collections",
+          "label": "Filter Collections",
+          "limit": 5,
+          "info": "Select collections to use as filters (max 5)"
+        }
+      ],
+      "presets": [
+        {
+          "name": "GBL Featured Products",
+          "settings": {
+            "title": "Our New Arrival"
+          }
+        }
+      ]
+    }
+    {% endschema %}

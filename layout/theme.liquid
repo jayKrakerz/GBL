@@ -296,6 +296,9 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+    <!-- Swiper CSS (CDN) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -307,13 +310,18 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% sections 'header-group' %}
+    {% comment %} {% sections 'header-group' %} {% endcomment %}
+
+    {% section 'gbl-announcement-bar' %}
+
+    {% section 'gbl-header' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
-    {% sections 'footer-group' %}
+    {% comment %} {% sections 'footer-group' %} {% endcomment %}
+    {% section 'gbl-footer' %}
 
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
@@ -372,5 +380,9 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <!-- Swiper JS (CDN) -->
+{% render 'gbl-cart-drawer' %}
+<script src="{{ 'gbl-cart-drawer.js' | asset_url }}" defer></script>
+
   </body>
 </html>

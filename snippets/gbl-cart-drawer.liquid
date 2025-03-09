@@ -1,0 +1,324 @@
+{% comment %}
+  Cart Drawer Snippet
+  - To be included in theme.liquid
+  - 520px width as specified
+  - Styling matches the reference image
+{% endcomment %}
+
+<style>
+  /* Cart Drawer Styles */
+  .cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -520px; /* Start position off-screen */
+    width: 520px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .cart-drawer.open {
+    right: 0;
+  }
+
+  .cart-drawer__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+
+  .cart-drawer__overlay.open {
+    display: block;
+  }
+
+  .cart-drawer__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .cart-drawer__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .cart-drawer__item-count {
+    background-color: #C26128;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .cart-drawer__divider {
+    height: 1px;
+    background-color: #EEEEEE;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .cart-drawer__subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .cart-drawer__subtotal-label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .cart-drawer__subtotal-amount {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .cart-drawer__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  .cart-drawer__view-cart {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .cart-drawer__checkout {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    background-color: #000;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .cart-drawer__items {
+    margin-bottom: 20px;
+  }
+
+  .cart-drawer__item {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  .cart-drawer__item-image {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 4px;
+  }
+
+  .cart-drawer__item-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cart-drawer__item-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0 0 5px;
+    color: #000;
+  }
+
+  .cart-drawer__price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px;
+  }
+
+  .cart-drawer__item-price {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #000;
+  }
+
+  .cart-drawer__item-discount {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #E9F6EB;
+    color: #308D3A;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+
+  .cart-drawer__item-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .cart-drawer__quantity-button {
+    background: transparent;
+    border: 1px solid #ddd;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .cart-drawer__quantity-input {
+    width: 40px;
+    height: 30px;
+    border: none;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .cart-drawer__item-remove {
+    color: #D14D4D;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: auto;
+    text-align: right;
+  }
+
+  .cart-drawer__empty {
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .cart-drawer__login {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .cart-drawer__login-text {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .cart-drawer__login-link {
+    color: #C26128;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .cart-drawer {
+      width: 100%;
+      right: -100%;
+      border-radius: 0;
+    }
+  }
+</style>
+
+<!-- Cart Drawer -->
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer__header">
+    <h2 class="cart-drawer__title">My Bag</h2>
+    <span class="cart-drawer__item-count">{{ cart.item_count }} Items</span>
+  </div>
+  
+  <div class="cart-drawer__divider"></div>
+  
+  <div class="cart-drawer__content">
+    {% if cart.item_count > 0 %}
+      <div class="cart-drawer__subtotal">
+        <span class="cart-drawer__subtotal-label">Subtotal:</span>
+        <span class="cart-drawer__subtotal-amount">{{ cart.total_price | money }}</span>
+      </div>
+      
+      <div class="cart-drawer__buttons">
+        <a href="/cart" class="cart-drawer__view-cart">View Bag ({{ cart.item_count }})</a>
+        <a href="/checkout" class="cart-drawer__checkout">Proceed to Checkout</a>
+      </div>
+      
+      <div class="cart-drawer__items">
+        {% for item in cart.items %}
+          <div class="cart-drawer__item">
+            <img class="cart-drawer__item-image" src="{{ item.image | img_url: '200x' }}" alt="{{ item.title | escape }}">
+            <div class="cart-drawer__item-details">
+              <h3 class="cart-drawer__item-title">{{ item.product.title }}</h3>
+              
+              <div class="cart-drawer__price-section">
+                <div>
+                  <span class="cart-drawer__item-price">{{ item.final_price | money }}</span>
+                  {% if item.final_price < item.original_price %}
+                    <span class="cart-drawer__item-discount">%{{ item.original_price | minus: item.final_price | times: 100.0 | divided_by: item.original_price | round }}OFF</span>
+                  {% endif %}
+                </div>
+                <a href="#" class="cart-drawer__item-remove js-remove-item" data-id="{{ item.key }}">Remove</a>
+              </div>
+              
+              <div class="cart-drawer__item-quantity">
+                <button class="cart-drawer__quantity-button js-qty-adjust" data-id="{{ item.key }}" data-qty="{{ item.quantity | minus: 1 }}">-</button>
+                <input class="cart-drawer__quantity-input" type="text" value="{{ item.quantity }}" data-id="{{ item.key }}" readonly>
+                <button class="cart-drawer__quantity-button js-qty-adjust" data-id="{{ item.key }}" data-qty="{{ item.quantity | plus: 1 }}">+</button>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      
+      {% unless customer %}
+        <div class="cart-drawer__login">
+          <p class="cart-drawer__login-text">Don't lose your bag!</p>
+          <a href="{{ routes.account_login_url }}" class="cart-drawer__login-link">Sign In or Create account</a>
+        </div>
+      {% endunless %}
+      
+    {% else %}
+      <div class="cart-drawer__empty">
+        <p>Your cart is empty</p>
+        <a href="/collections/all" class="cart-drawer__checkout">Start Shopping</a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<div class="cart-drawer__overlay" id="cartOverlay"></div>

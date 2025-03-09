@@ -1,0 +1,297 @@
+{% comment %}
+  GBL Accessories Best Sellers Section
+  - Showcases top-selling products in an elegant grid
+  - Clean, minimal product cards with hover effects
+  - Wishlist heart icon
+  - Price display with color variant dots when available
+{% endcomment %}
+
+{% comment %}
+  Modified GBL Bestsellers section with fixed product count implementation
+  - Uses counter method to ensure exact number of products from settings
+{% endcomment %}
+
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .gbl-bestsellers {
+    padding: 80px 0;
+    background-color: #ffffff;
+  }
+
+  .gbl-bestsellers__container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .gbl-bestsellers__title {
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: var(--font-heading-family);
+    color: #000000;
+  }
+
+  .gbl-bestsellers__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .gbl-bestsellers__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gbl-bestsellers__image-wrapper {
+    position: relative;
+    padding-bottom: 100%;
+    background-color: #f7f4ef;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  .gbl-bestsellers__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+  }
+
+  .gbl-bestsellers__card:hover .gbl-bestsellers__image {
+    transform: scale(1.05);
+  }
+
+  .gbl-bestsellers__wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .gbl-bestsellers__wishlist-icon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #888;
+    stroke-width: 1.5;
+    transition: all 0.3s ease;
+  }
+
+  .gbl-bestsellers__wishlist:hover .gbl-bestsellers__wishlist-icon {
+    stroke: #d4af37;
+  }
+
+  .gbl-bestsellers__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gbl-bestsellers__title-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .gbl-bestsellers__product-title {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .gbl-bestsellers__price {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+  }
+
+  .gbl-bestsellers__color-options {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .gbl-bestsellers__color-option {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+  }
+
+  .gbl-bestsellers__color-option--gold {
+    background-color: #d4af37;
+  }
+
+  .gbl-bestsellers__color-option--silver {
+    background-color: #c0c0c0;
+  }
+
+  .gbl-bestsellers__color-option--rose-gold {
+    background-color: #b76e79;
+  }
+
+  @media screen and (max-width: 990px) {
+    .gbl-bestsellers__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .gbl-bestsellers {
+      padding: 60px 0;
+    }
+    
+    .gbl-bestsellers__grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .gbl-bestsellers__title {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="gbl-bestsellers">
+  <div class="gbl-bestsellers__container">
+    <h2 class="gbl-bestsellers__title">{{ section.settings.title }}</h2>
+    
+    <div class="gbl-bestsellers__grid">
+      {% comment %}
+      Get all products and max count from settings
+      {% endcomment %}
+      {% assign max_products = section.settings.products_count %}
+      {% assign all_products = section.settings.collection.products %}
+      
+      {% comment %}Limit products with manual counter{% endcomment %}
+      {% assign product_count = 0 %}
+      {% for product in all_products %}
+        {% if product_count < max_products %}
+          <div class="gbl-bestsellers__card">
+            <div class="gbl-bestsellers__image-wrapper">
+              <button class="gbl-bestsellers__wishlist" aria-label="Add to wishlist">
+                <svg class="gbl-bestsellers__wishlist-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </button>
+              
+              <a href="{{ product.url }}">
+                {% if product.featured_image != blank %}
+                  {{ product.featured_image | img_url: '500x500' | img_tag: product.title, 'gbl-bestsellers__image' }}
+                {% else %}
+                  {{ 'product-1' | placeholder_svg_tag: 'gbl-bestsellers__image' }}
+                {% endif %}
+              </a>
+            </div>
+            
+            <div class="gbl-bestsellers__info">
+              <a href="{{ product.url }}" class="gbl-bestsellers__title-link">
+                <h3 class="gbl-bestsellers__product-title">{{ product.title }}</h3>
+              </a>
+              
+              <span class="gbl-bestsellers__price">{{ product.price | money }}</span>
+              
+              {% if product.variants.size > 1 and section.settings.show_color_options %}
+                {% assign has_gold = false %}
+                {% assign has_silver = false %}
+                {% assign has_rose_gold = false %}
+                
+                {% for variant in product.variants %}
+                  {% if variant.title contains 'Gold' or variant.title contains 'gold' %}
+                    {% assign has_gold = true %}
+                  {% endif %}
+                  
+                  {% if variant.title contains 'Silver' or variant.title contains 'silver' %}
+                    {% assign has_silver = true %}
+                  {% endif %}
+                  
+                  {% if variant.title contains 'Rose' or variant.title contains 'rose' %}
+                    {% assign has_rose_gold = true %}
+                  {% endif %}
+                {% endfor %}
+                
+                {% if has_gold or has_silver or has_rose_gold %}
+                  <div class="gbl-bestsellers__color-options">
+                    {% if has_gold %}
+                      <span class="gbl-bestsellers__color-option gbl-bestsellers__color-option--gold" title="Gold"></span>
+                    {% endif %}
+                    
+                    {% if has_silver %}
+                      <span class="gbl-bestsellers__color-option gbl-bestsellers__color-option--silver" title="Silver"></span>
+                    {% endif %}
+                    
+                    {% if has_rose_gold %}
+                      <span class="gbl-bestsellers__color-option gbl-bestsellers__color-option--rose-gold" title="Rose Gold"></span>
+                    {% endif %}
+                  </div>
+                {% endif %}
+              {% endif %}
+            </div>
+          </div>
+          
+          {% comment %}Increment counter{% endcomment %}
+          {% assign product_count = product_count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Best Sellers",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Best Seller"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection",
+      "info": "Select a collection of products to display"
+    },
+    {
+      "type": "range",
+      "id": "products_count",
+      "min": 3,
+      "max": 12,
+      "step": 3,
+      "label": "Number of Products",
+      "default": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "show_color_options",
+      "label": "Show Color Options",
+      "default": true,
+      "info": "Display color variant dots if product has gold, silver, or rose gold variants"
+    }
+  ],
+  "presets": [
+    {
+      "name": "GBL Best Sellers",
+      "settings": {
+        "title": "Best Seller",
+        "products_count": 3
+      }
+    }
+  ]
+}
+{% endschema %}
