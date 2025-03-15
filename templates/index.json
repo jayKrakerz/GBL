@@ -1,1 +1,277 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Explore Our Wide Range of Stylish Collections.","heading_size":"h1"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","button"],"settings":{"image":"shopify:\/\/shop_images\/Beige_Tan_Minimalist_Jewelry_Collection_Instagram_Post.png","image_overlay_opacity":40,"image_height":"large","desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"featured_collection":{"type":"featured-collection","settings":{"title":"Featured products","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"frontpage","products_to_show":10,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"scheme-2","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":true,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":false,"padding_top":44,"padding_bottom":36}},"rich_text_chT37F":{"type":"rich-text","blocks":{"heading_8b88E8":{"type":"heading","settings":{"heading":"Discover High-Quality, Beautiful & Unique Designs.","heading_size":"h2"}},"text_8bnpVf":{"type":"text","settings":{"text":"<p>Indulge in the elegance of our premium selection crafted from top-tier materials like non-tarnish gold plating. Quality meets luxury in every piece.<\/p>"}},"button_LcR9j7":{"type":"button","settings":{"button_label":"SHOP NOW","button_link":"shopify:\/\/collections\/all","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_8b88E8","text_8bnpVf","button_LcR9j7"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":52}},"1730568178bbb7af4c":{"type":"apps","blocks":{"klaviyo_reviews_featured_reviews_carousel_eM8FPx":{"type":"shopify:\/\/apps\/klaviyo-reviews\/blocks\/featured-reviews-carousel\/db20e365-d984-4ac4-9655-e1588d951ca9","settings":{}}},"block_order":["klaviyo_reviews_featured_reviews_carousel_eM8FPx"],"settings":{"include_margins":false}},"173056829987e9d4ab":{"type":"apps","settings":{"include_margins":true}},"1731735866bf83c57d":{"type":"apps","blocks":{"instafeed_app_block_ELx3VJ":{"type":"shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5","settings":{"title":"","title_color":"","alignment":"center","background_color":"","feed_id":"","html_area":""}}},"block_order":["instafeed_app_block_ELx3VJ"],"settings":{"include_margins":true}}},"order":["image_banner","featured_collection","rich_text_chT37F","1730568178bbb7af4c","173056829987e9d4ab","1731735866bf83c57d"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gbl_hero_rCzgxM": {
+      "type": "gbl-hero",
+      "blocks": {
+        "banner_slider_GX7in3": {
+          "type": "banner_slider",
+          "settings": {
+            "ban_img": "shopify://shop_images/gbl-hero.png",
+            "ban_link": "shopify://collections/all",
+            "heading_line1": "Shine",
+            "heading_line2": "Bright Like",
+            "heading_accent": "a Diamond",
+            "text": "If there was a choice on spending a lot of money on accessories or dresses, I always chose accessories. I think jewelry can change an outfit more than anything else",
+            "button_text": "Shop Now"
+          }
+        },
+        "banner_slider_6rYJHW": {
+          "type": "banner_slider",
+          "settings": {
+            "ban_img": "shopify://shop_images/video-banner.png",
+            "ban_link": "shopify://collections/all",
+            "heading_line1": "Elegant",
+            "heading_line2": "Accessories",
+            "heading_accent": "for You",
+            "text": "Jewelry is like the perfect spice - it always complements what's already there.",
+            "button_text": "Shop Now"
+          }
+        },
+        "banner_slider_8Adxa9": {
+          "type": "banner_slider",
+          "settings": {
+            "ban_img": "shopify://shop_images/gbl-hero.png",
+            "ban_link": "shopify://collections/all",
+            "heading_line1": "Shine",
+            "heading_line2": "Bright Like",
+            "heading_accent": "a Diamond",
+            "text": "If there was a choice on spending a lot of money on accessories or dresses, I always chose accessories. I think jewelry can change an outfit more than anything else",
+            "button_text": "Shop Now"
+          }
+        }
+      },
+      "block_order": [
+        "banner_slider_GX7in3",
+        "banner_slider_6rYJHW",
+        "banner_slider_8Adxa9"
+      ],
+      "settings": {
+        "auto_rotate": true,
+        "slide_interval": 5,
+        "transition_effect": "fade"
+      }
+    },
+    "gbl_jewelry_categories_fkYjxE": {
+      "type": "gbl-jewelry-categories",
+      "blocks": {
+        "category_j9NKeG": {
+          "type": "category",
+          "settings": {
+            "title": "RINGS",
+            "link": "/collections/rings",
+            "icon": "rings"
+          }
+        },
+        "category_wUEzhK": {
+          "type": "category",
+          "settings": {
+            "title": "BRACELET",
+            "link": "/collections/bracelets",
+            "icon": "bracelet"
+          }
+        },
+        "category_cqzdW6": {
+          "type": "category",
+          "settings": {
+            "title": "EARRINGS",
+            "link": "/collections/earrings",
+            "icon": "earrings"
+          }
+        },
+        "category_APTFcT": {
+          "type": "category",
+          "settings": {
+            "title": "NECKLACE",
+            "link": "/collections/necklace",
+            "icon": "necklace"
+          }
+        },
+        "category_Lmx69f": {
+          "type": "category",
+          "settings": {
+            "title": "CHAIN",
+            "link": "/collections/chain",
+            "icon": "chain"
+          }
+        }
+      },
+      "block_order": [
+        "category_j9NKeG",
+        "category_wUEzhK",
+        "category_cqzdW6",
+        "category_APTFcT",
+        "category_Lmx69f"
+      ],
+      "settings": {
+        "icon_background": "#f7f4ef",
+        "active_background": "#f7f4ef",
+        "icon_color": "#d4af37",
+        "text_color": "#272727",
+        "icon_border_color": "#d4af37",
+        "border_radius": 4,
+        "show_border": true
+      }
+    },
+    "gbl_featured_products_V4gKBn": {
+      "type": "gbl-featured-products",
+      "settings": {
+        "title": "Our New Arrival",
+        "products_collection": "best-selling",
+        "products_count": 6,
+        "filter_collections": [
+          "anklets",
+          "bangles",
+          "black-friday-bundle-deals",
+          "bracelets",
+          "earrings"
+        ]
+      }
+    },
+    "gbl_product_spotlight_AdBkVn": {
+      "type": "gbl-product-spotlight",
+      "settings": {
+        "image": "shopify://shop_images/spotlight-image.png",
+        "product_title": "Pavé Diamond Slim Signet",
+        "product_tag": "24k Gold",
+        "heading": "Never Let Anyone Dull Your Sparkle",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+        "button_text": "View All Collection",
+        "button_link": ""
+      }
+    },
+    "gbl_bestsellers_FNCmrG": {
+      "type": "gbl-bestsellers",
+      "settings": {
+        "title": "Best Seller",
+        "collection": "best-selling",
+        "products_count": 3,
+        "show_color_options": true
+      }
+    },
+    "gbl_service_highlights_WtDcXy": {
+      "type": "gbl-service-highlights",
+      "blocks": {
+        "service_3AFncf": {
+          "type": "service",
+          "settings": {
+            "icon": "shipping",
+            "title": "Fast Shipping",
+            "description": "Instant delivery to your location"
+          }
+        },
+        "service_wGdxke": {
+          "type": "service",
+          "settings": {
+            "icon": "money",
+            "title": "Money Guarantee",
+            "description": "Within 30 days for an exchange"
+          }
+        },
+        "service_RdwJqf": {
+          "type": "service",
+          "settings": {
+            "icon": "support",
+            "title": "Online Support",
+            "description": "24 hours a day, 7 days a week"
+          }
+        },
+        "service_CAYAUD": {
+          "type": "service",
+          "settings": {
+            "icon": "payment",
+            "title": "Flexible Payment",
+            "description": "Pay with multiple Credit Cards"
+          }
+        }
+      },
+      "block_order": [
+        "service_3AFncf",
+        "service_wGdxke",
+        "service_RdwJqf",
+        "service_CAYAUD"
+      ],
+      "settings": {
+        "background_color": "#000000",
+        "icon_color": "#d4af37",
+        "title_color": "#d4af37",
+        "text_color": "#ffffff"
+      }
+    },
+    "gbl_testimonial_VGTGfB": {
+      "type": "gbl-testimonial",
+      "settings": {
+        "star_rating": 5,
+        "quote": "I really think that American gentlemen are the best after all, because kissing your hand may make you feel very good, but a diamond and a sapphire bracelet lasts forever",
+        "author_name": "Michal Brink",
+        "author_location": "Royal Ln. Mesa, New Jersey",
+        "background_color": "#f8f6f1",
+        "text_color": "#333333",
+        "star_color": "#000000"
+      }
+    },
+    "1730568178bbb7af4c": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_featured_reviews_carousel_eM8FPx": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_featured_reviews_carousel_eM8FPx"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "173056829987e9d4ab": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1731735866bf83c57d": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_ELx3VJ": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_ELx3VJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "gbl_hero_rCzgxM",
+    "gbl_jewelry_categories_fkYjxE",
+    "gbl_featured_products_V4gKBn",
+    "gbl_product_spotlight_AdBkVn",
+    "gbl_bestsellers_FNCmrG",
+    "gbl_service_highlights_WtDcXy",
+    "gbl_testimonial_VGTGfB",
+    "1730568178bbb7af4c",
+    "173056829987e9d4ab",
+    "1731735866bf83c57d"
+  ]
+}
