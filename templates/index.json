@@ -229,6 +229,7 @@
       "block_order": [
         "klaviyo_reviews_featured_reviews_carousel_eM8FPx"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": false
       }
