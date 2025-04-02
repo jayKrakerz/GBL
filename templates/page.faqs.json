@@ -19,29 +19,85 @@
         "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-0": {
           "type": "faq",
           "settings": {
-            "faq_title": "How do I make a purchase?",
-            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>"
+            "faq_title": "What type of jewellery do you sell?",
+            "faq_des": "<p>We specialize in high-quality, non-tarnish, and hypoallergenic gold-plated jewellery.<br/>Our pieces are designed for everyday wear, ensuring durability and elegance without<br/>irritation.</p>"
           }
         },
         "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-1": {
           "type": "faq",
           "settings": {
-            "faq_title": "How do I know if my order is confirmed?",
-            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>"
+            "faq_title": "Will the jewellery tarnish or fade over time?",
+            "faq_des": "<p>No, our jewellery is crafted with high-quality gold plating that is resistant to tarnishing<br/>and fading. With proper care, your pieces will maintain their shine for a long time.<br/></p>"
           }
         },
         "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-2": {
           "type": "faq",
           "settings": {
-            "faq_title": "Can I change my shipping address after my order is placed?",
-            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>"
+            "faq_title": "⁠Is your jewellery safe for sensitive skin?",
+            "faq_des": "<p>Yes! Our jewellery is hypoallergenic and free from harsh metals like nickel and lead,<br/>making it safe for people with sensitive skin.<br/></p>"
+          }
+        },
+        "faq_Y7XNi9": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How do I take care of my jewellery?",
+            "faq_des": "<p>To maintain the shine and longevity of your jewellery, we recommend:<br/>•⁠  ⁠Keeping it dry and avoiding direct contact with water, perfumes, and lotions.<br/>•⁠  ⁠Storing it in a dry, cool place when not in use.<br/>•⁠  ⁠Cleaning it gently with a soft cloth after wearing, all orders come with a jewellery<br/>cleaner.<br/></p>"
+          }
+        },
+        "faq_UJaAWw": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Do you offer returns or exchanges?",
+            "faq_des": "<p>Yes, we accept returns and exchanges within 7 days of purchase, if the items are<br/>unworn and in their original packaging. Please check our Return Policy for full details.<br/></p>"
+          }
+        },
+        "faq_yNcfkV": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How long does shipping take?",
+            "faq_des": "<p>We offer fast shipping within the UK. Orders are typically processed within 1-2 business<br/>days and delivered within 3-5 business days.<br/></p>"
+          }
+        },
+        "faq_MJhPyq": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "⁠Do you ship internationally?",
+            "faq_des": "<p>Currently, we ship within the UK. However, we are working on expanding our shipping<br/>options to serve international customers.<br/></p>"
+          }
+        },
+        "faq_yeDQKn": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "⁠How can I track my order?",
+            "faq_des": "<p>Once your order is shipped, you will receive a tracking number via email to monitor your<br/>delivery status.<br/></p>"
+          }
+        },
+        "faq_rncy3c": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What payment methods do you accept?",
+            "faq_des": "<p>We accept major credit/debit cards, PayPal, Klarna and other secure payment options<br/>to ensure a seamless checkout process.<br/></p>"
+          }
+        },
+        "faq_bDknjG": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "⁠Do you offer gift packaging?",
+            "faq_des": "<p>Yes! Our jewellery comes in elegant packaging, making it perfect for gifting. You can<br/>also add a personalized note at checkout.</p>"
           }
         }
       },
       "block_order": [
         "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-0",
         "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-1",
-        "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-2"
+        "template--16736981942590__9ad78513-f48a-4eed-affd-30f6d370be1c-1666772143a4c26d1e-2",
+        "faq_Y7XNi9",
+        "faq_UJaAWw",
+        "faq_yNcfkV",
+        "faq_MJhPyq",
+        "faq_yeDQKn",
+        "faq_rncy3c",
+        "faq_bDknjG"
       ],
       "settings": {
         "animation": "fade-up",
@@ -61,67 +117,6 @@
         "left_html": "",
         "e_right": false,
         "paddingsection": "48px 0px 60px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "062df5dc-f552-45ec-89c4-08fb863777b7": {
-      "type": "faq-accordion",
-      "blocks": {
-        "template--16736981942590__062df5dc-f552-45ec-89c4-08fb863777b7-1666772143a4c26d1e-0": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "Do you ship internationally?",
-            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>"
-          }
-        },
-        "template--16736981942590__062df5dc-f552-45ec-89c4-08fb863777b7-1666772143a4c26d1e-1": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "When will my order be shipped?",
-            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>"
-          }
-        },
-        "template--16736981942590__062df5dc-f552-45ec-89c4-08fb863777b7-1666772143a4c26d1e-2": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "What is your return policy?",
-            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>"
-          }
-        },
-        "c3fd023b-88d4-4be1-b635-a8d461da7f4c": {
-          "type": "faq",
-          "settings": {
-            "faq_title": "How long will it take until I receive my order?",
-            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--16736981942590__062df5dc-f552-45ec-89c4-08fb863777b7-1666772143a4c26d1e-0",
-        "template--16736981942590__062df5dc-f552-45ec-89c4-08fb863777b7-1666772143a4c26d1e-1",
-        "template--16736981942590__062df5dc-f552-45ec-89c4-08fb863777b7-1666772143a4c26d1e-2",
-        "c3fd023b-88d4-4be1-b635-a8d461da7f4c"
-      ],
-      "settings": {
-        "animation": "fade-up",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "e_size": "auto",
-        "e_repeat": "no-repeat",
-        "e_pos": "center center",
-        "title_top": "",
-        "title": "Shipping & Returns",
-        "des": "Below are some common questions about shipping, returns, and exchanges",
-        "align-heading": "center",
-        "title_size": "h6",
-        "e_first_open": false,
-        "e_reverse": true,
-        "e_small": true,
-        "left_html": "",
-        "e_right": false,
-        "paddingsection": "0px 0px 80px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -167,6 +162,7 @@
         "title": "",
         "text": "",
         "align-heading": "center",
+        "align-content": "center",
         "paddingsection": "10px 0px 100px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
@@ -177,7 +173,6 @@
   "order": [
     "main",
     "9ad78513-f48a-4eed-affd-30f6d370be1c",
-    "062df5dc-f552-45ec-89c4-08fb863777b7",
     "e3f9b59b-307f-4380-8307-f05ffecaaef0"
   ]
 }

@@ -1,0 +1,10 @@
+{% assign faq_data = page.faqs %}
+
+<div class="faq-page">
+  {% for faq in faq_data %}
+    <div class="faq-item">
+      <h3>{{ faq.question }}</h3>
+      <p>{{ faq.answer }}</p>
+    </div>
+  {% endfor %}
+</div>

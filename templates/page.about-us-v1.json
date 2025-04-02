@@ -47,7 +47,7 @@
         "setwidth": "full",
         "bgsection": "#ffffff",
         "parrallax_enable": true,
-        "image": "shopify:\/\/shop_images\/SLIDESHOW_1_3_09422cf9-4081-4257-adf7-048496d14b1c.webp",
+        "image": "shopify://shop_images/mkol.png",
         "height_section": "450",
         "height_section_mobile": "450",
         "align": "left",
@@ -69,7 +69,7 @@
           "type": "image",
           "settings": {
             "img-in-hero": 80,
-            "image": "shopify:\/\/shop_images\/icon5.svg",
+            "image": "shopify://shop_images/GBL_LOGO.png",
             "image_link": ""
           }
         },
@@ -89,14 +89,14 @@
         "02d7795e-308f-44d9-b007-aa374d77dbcb": {
           "type": "heading",
           "settings": {
-            "title": "Advanced Science Of Care That <br> Uplifts And Inspires.",
+            "title": "Timeless Style That Empowers and Inspires.",
             "size_text": "h2"
           }
         },
         "5b0f48ed-12f4-43e7-a7fd-3e3ea948966e": {
           "type": "paragraph",
           "settings": {
-            "subtext": "Skincare is not a race. It’s a journey and rather a non-linear one. A journey whose phases cannot be constrained to a before and after, one that is constantly evolving and trying to express itself.\n\nThe skin has needs that go far beyond the bounds of simply feeding it products and ingredients. At Lisén, we want your skin to find all that it seeks and more.\n\nOur effective, high-grade formulas developed especially for Indian Skin in acclaimed global labs, combined with the values of integrity, kindness and optimism, make Lisén the perfect partner in every phase of your skin journey."
+            "subtext": "At GBL, we offer more than just clothing and accessories – we provide timeless pieces that elevate your personal style and bring confidence to every occasion. Our carefully curated collection of clothing and necklaces is crafted with quality and attention to detail, designed to complement your unique expression.\n\nWhether you're looking to refresh your wardrobe or find the perfect accessory, GBL has something special for every style. We’re committed to making your shopping experience effortless and enjoyable, ensuring that you feel valued with every purchase.\n\nWelcome to GBL – where every piece tells a story."
           }
         }
       },
@@ -138,7 +138,7 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30,
             "text_circle": "New Fashion style store",
-            "video_url": "https:\/\/www.youtube.com\/watch?v=Yghmzsr3S14&ab_channel=Kandra"
+            "video_url": "https://www.youtube.com/watch?v=Yghmzsr3S14&ab_channel=Kandra"
           }
         },
         "template--16716887458110__d72bcc8c-88fe-4415-96f0-06511b070083-16666725974cf35e4d-1": {
@@ -149,7 +149,7 @@
             "title": "Who we are?",
             "size_text": "h2",
             "text": "",
-            "answer_content": "<p>The cut of a diamond determines its brilliance, how much its facets interact with light and sparkle.  Cut does not refer to the shape of a diamond, but instead grades how perfectly the stone has been cut into it's shape.<\/p>",
+            "answer_content": "<p>The cut of a diamond determines its brilliance, how much its facets interact with light and sparkle.  Cut does not refer to the shape of a diamond, but instead grades how perfectly the stone has been cut into it's shape.</p>",
             "button": "discover now",
             "link": "",
             "style_btn": "btn-underline",
@@ -184,11 +184,11 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "FOR ALL SKIN TYPES",
+            "title": "For Every Occasion",
             "description": "",
             "type_icon": "img",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 64 64\"><path d=\"M32 54.52L10 41.95v-19.9L32 9.48l22 12.57v19.9L32 54.52z\"><\/path><path d=\"M32 54.52v-19.9l22-12.57M32 34.62L10 22.05M41.7 15.02L21 28.33v8.38\"><\/path><\/svg>",
-            "image_icon": "shopify:\/\/shop_images\/icon1.svg",
+            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 64 64\"><path d=\"M32 54.52L10 41.95v-19.9L32 9.48l22 12.57v19.9L32 54.52z\"></path><path d=\"M32 54.52v-19.9l22-12.57M32 34.62L10 22.05M41.7 15.02L21 28.33v8.38\"></path></svg>",
+            "image_icon": "shopify://shop_images/necklace_74115f79-3163-4ed8-a9eb-8b2d7b677225.png",
             "link_block": "",
             "button": "",
             "style_btn": "btn-underline"
@@ -198,11 +198,11 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "NOT TESTED ON ANIMALS",
+            "title": "Ethically Made",
             "description": "",
             "type_icon": "img",
-            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 64 64\"><path d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94M45.42 43.22h-5.4V30.4h17.1v12.82h-4.23M57.12 30.4l-6.41-8.56H40.02\"><\/path><circle cx=\"20.24\" cy=\"43.76\" r=\"3.74\"><\/circle><path d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"><\/path><\/svg>",
-            "image_icon": "shopify:\/\/shop_images\/icon2.svg",
+            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 64 64\"><path d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94M45.42 43.22h-5.4V30.4h17.1v12.82h-4.23M57.12 30.4l-6.41-8.56H40.02\"></path><circle cx=\"20.24\" cy=\"43.76\" r=\"3.74\"></circle><path d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"></path></svg>",
+            "image_icon": "shopify://shop_images/Rings_d600584f-705a-4a84-941b-6689d5fac4d6.png",
             "link_block": "",
             "button": "",
             "style_btn": "btn-underline"
@@ -212,11 +212,11 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "HYPOALLERGENIC",
+            "title": "Comfort Meets Style",
             "description": "",
             "type_icon": "img",
-            "icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M15.0039 10.2464C14.9149 10.2464 14.8326 10.2005 14.7855 10.1252L11.8344 5.3944C11.785 5.31515 11.7824 5.21532 11.8278 5.13339C11.8731 5.05167 11.9594 5.00082 12.0528 5.00082L17.9181 5C18.0113 5 18.0971 5.05043 18.1426 5.13195C18.1883 5.21346 18.1861 5.31289 18.1373 5.39235L15.2229 10.1242C15.1762 10.1999 15.0936 10.2464 15.0045 10.2466L15.0039 10.2464ZM12.5166 5.51565L15.0024 9.50065L17.4574 5.51483L12.5166 5.51565Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"><\/path>\n<path d=\"M9.1197 10.2464C9.03098 10.2464 8.94884 10.2007 8.90171 10.1258L5.93524 5.39502C5.88542 5.31577 5.88274 5.21573 5.92803 5.1336C5.97332 5.05187 6.05957 5.00082 6.15323 5.00082L12.0528 5C12.1461 5 12.2321 5.05064 12.2776 5.13215C12.3231 5.21367 12.3208 5.31371 12.2716 5.39296L9.33831 10.1246C9.29138 10.2001 9.20904 10.2462 9.12011 10.2464H9.1197ZM6.61803 5.51565L9.11826 9.50292L11.5905 5.51483L6.61803 5.51565Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"><\/path>\n<path d=\"M9.12361 10.2464C9.12258 10.2464 9.12093 10.2466 9.11949 10.2464H3.26271C3.16967 10.2464 3.08383 10.1962 3.03834 10.1149C2.99264 10.0336 2.99449 9.93438 3.04307 9.85492L5.93359 5.1233C5.98011 5.04714 6.06245 5.00062 6.15179 5C6.1522 5 6.15281 5 6.15323 5C6.24195 5 6.32408 5.0457 6.37122 5.12063L9.31669 9.81828C9.35683 9.86377 9.38112 9.92347 9.38112 9.98893C9.38092 10.1314 9.26585 10.2464 9.12361 10.2464ZM3.72134 9.73182H8.65469L6.1559 5.7464L3.72134 9.73182Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"><\/path>\n<path d=\"M15.0077 10.2464C15.0067 10.2464 15.0053 10.2466 15.0036 10.2464H9.11968C9.02643 10.2464 8.94039 10.1958 8.8949 10.1143C8.8494 10.0328 8.85167 9.93273 8.90087 9.85348L11.834 5.12186C11.8809 5.04632 11.9635 5.00021 12.0524 5H12.0528C12.1417 5 12.2241 5.0459 12.2712 5.12124L15.201 9.81869C15.241 9.86418 15.2653 9.92367 15.2653 9.98893C15.2651 10.1314 15.15 10.2464 15.0077 10.2464ZM9.58181 9.73182H14.5401L12.0534 5.74476L9.58181 9.73182Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"><\/path>\n<path d=\"M20.8129 10.2464C20.8119 10.2464 20.8102 10.2466 20.8088 10.2464H15.0039C14.9106 10.2464 14.8248 10.196 14.7791 10.1145C14.7336 10.033 14.7359 9.93355 14.7847 9.8541L17.6988 5.12248C17.7458 5.04632 17.8287 5 17.9179 5H17.9183C18.0078 5.00021 18.0908 5.04693 18.1373 5.1233L21.0072 9.82054C21.0463 9.86562 21.07 9.9245 21.07 9.98893C21.0702 10.1314 20.9551 10.2464 20.8129 10.2464ZM15.4646 9.73182H20.3502L17.9172 5.7497L15.4646 9.73182Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"><\/path>\n<path d=\"M12.0856 19.3742C12.0158 19.3742 11.9491 19.3458 11.9007 19.2958L3.07233 10.1681C3.00049 10.094 2.98011 9.98362 3.02046 9.88873C3.0606 9.79363 3.15385 9.73187 3.25718 9.73187H20.809C20.9119 9.73187 21.005 9.79342 21.0455 9.88811C21.0859 9.9828 21.0661 10.0925 20.9949 10.1668L12.2715 19.2945C12.2233 19.3452 12.1562 19.374 12.0864 19.3742H12.0856ZM3.86402 10.2465L12.0843 18.7455L20.2071 10.2465H3.86402Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"><\/path>\n<path d=\"M12.0856 19.3741C11.9771 19.3741 11.876 19.305 11.841 19.1965L8.87496 10.0688C8.83091 9.93356 8.90501 9.78843 9.04005 9.74459C9.17591 9.70054 9.32062 9.77464 9.36426 9.90968L12.3301 19.0374C12.3742 19.1726 12.3001 19.3177 12.165 19.3616C12.1387 19.3702 12.1119 19.3741 12.0856 19.3741Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"><\/path>\n<path d=\"M12.0942 19.3741C12.0685 19.3741 12.0421 19.3702 12.016 19.362C11.8807 19.3188 11.8058 19.1741 11.8488 19.0386L14.7585 9.9109C14.8017 9.77587 14.945 9.70073 15.0819 9.74375C15.2171 9.78698 15.292 9.93169 15.249 10.0671L12.3393 19.195C12.3044 19.3044 12.2033 19.3741 12.0942 19.3741Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"><\/path>\n<\/svg>",
-            "image_icon": "shopify:\/\/shop_images\/icon3.svg",
+            "icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.0039 10.2464C14.9149 10.2464 14.8326 10.2005 14.7855 10.1252L11.8344 5.3944C11.785 5.31515 11.7824 5.21532 11.8278 5.13339C11.8731 5.05167 11.9594 5.00082 12.0528 5.00082L17.9181 5C18.0113 5 18.0971 5.05043 18.1426 5.13195C18.1883 5.21346 18.1861 5.31289 18.1373 5.39235L15.2229 10.1242C15.1762 10.1999 15.0936 10.2464 15.0045 10.2466L15.0039 10.2464ZM12.5166 5.51565L15.0024 9.50065L17.4574 5.51483L12.5166 5.51565Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M9.1197 10.2464C9.03098 10.2464 8.94884 10.2007 8.90171 10.1258L5.93524 5.39502C5.88542 5.31577 5.88274 5.21573 5.92803 5.1336C5.97332 5.05187 6.05957 5.00082 6.15323 5.00082L12.0528 5C12.1461 5 12.2321 5.05064 12.2776 5.13215C12.3231 5.21367 12.3208 5.31371 12.2716 5.39296L9.33831 10.1246C9.29138 10.2001 9.20904 10.2462 9.12011 10.2464H9.1197ZM6.61803 5.51565L9.11826 9.50292L11.5905 5.51483L6.61803 5.51565Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M9.12361 10.2464C9.12258 10.2464 9.12093 10.2466 9.11949 10.2464H3.26271C3.16967 10.2464 3.08383 10.1962 3.03834 10.1149C2.99264 10.0336 2.99449 9.93438 3.04307 9.85492L5.93359 5.1233C5.98011 5.04714 6.06245 5.00062 6.15179 5C6.1522 5 6.15281 5 6.15323 5C6.24195 5 6.32408 5.0457 6.37122 5.12063L9.31669 9.81828C9.35683 9.86377 9.38112 9.92347 9.38112 9.98893C9.38092 10.1314 9.26585 10.2464 9.12361 10.2464ZM3.72134 9.73182H8.65469L6.1559 5.7464L3.72134 9.73182Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M15.0077 10.2464C15.0067 10.2464 15.0053 10.2466 15.0036 10.2464H9.11968C9.02643 10.2464 8.94039 10.1958 8.8949 10.1143C8.8494 10.0328 8.85167 9.93273 8.90087 9.85348L11.834 5.12186C11.8809 5.04632 11.9635 5.00021 12.0524 5H12.0528C12.1417 5 12.2241 5.0459 12.2712 5.12124L15.201 9.81869C15.241 9.86418 15.2653 9.92367 15.2653 9.98893C15.2651 10.1314 15.15 10.2464 15.0077 10.2464ZM9.58181 9.73182H14.5401L12.0534 5.74476L9.58181 9.73182Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M20.8129 10.2464C20.8119 10.2464 20.8102 10.2466 20.8088 10.2464H15.0039C14.9106 10.2464 14.8248 10.196 14.7791 10.1145C14.7336 10.033 14.7359 9.93355 14.7847 9.8541L17.6988 5.12248C17.7458 5.04632 17.8287 5 17.9179 5H17.9183C18.0078 5.00021 18.0908 5.04693 18.1373 5.1233L21.0072 9.82054C21.0463 9.86562 21.07 9.9245 21.07 9.98893C21.0702 10.1314 20.9551 10.2464 20.8129 10.2464ZM15.4646 9.73182H20.3502L17.9172 5.7497L15.4646 9.73182Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M12.0856 19.3742C12.0158 19.3742 11.9491 19.3458 11.9007 19.2958L3.07233 10.1681C3.00049 10.094 2.98011 9.98362 3.02046 9.88873C3.0606 9.79363 3.15385 9.73187 3.25718 9.73187H20.809C20.9119 9.73187 21.005 9.79342 21.0455 9.88811C21.0859 9.9828 21.0661 10.0925 20.9949 10.1668L12.2715 19.2945C12.2233 19.3452 12.1562 19.374 12.0864 19.3742H12.0856ZM3.86402 10.2465L12.0843 18.7455L20.2071 10.2465H3.86402Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M12.0856 19.3741C11.9771 19.3741 11.876 19.305 11.841 19.1965L8.87496 10.0688C8.83091 9.93356 8.90501 9.78843 9.04005 9.74459C9.17591 9.70054 9.32062 9.77464 9.36426 9.90968L12.3301 19.0374C12.3742 19.1726 12.3001 19.3177 12.165 19.3616C12.1387 19.3702 12.1119 19.3741 12.0856 19.3741Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M12.0942 19.3741C12.0685 19.3741 12.0421 19.3702 12.016 19.362C11.8807 19.3188 11.8058 19.1741 11.8488 19.0386L14.7585 9.9109C14.8017 9.77587 14.945 9.70073 15.0819 9.74375C15.2171 9.78698 15.292 9.93169 15.249 10.0671L12.3393 19.195C12.3044 19.3044 12.2033 19.3741 12.0942 19.3741Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n</svg>",
+            "image_icon": "shopify://shop_images/ear_rings.png",
             "link_block": "",
             "button": "",
             "style_btn": "btn-underline"
@@ -226,11 +226,11 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "FREE FROM PARABENS",
+            "title": "Timeless & Durable",
             "description": "",
             "type_icon": "img",
-            "icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M13.2688 8.07846L15.103 6.33556C15.1932 6.24541 15.2232 6.09516 15.1631 5.97496L13.5093 3.15025C13.4492 3.0601 13.359 3 13.2387 3H9.96128C9.841 3 9.7508 3.0601 9.69066 3.15025L8.0369 5.97496C7.97677 6.09516 7.97677 6.24541 8.09704 6.33556L9.93121 8.07846C7.10478 8.82972 5 11.384 5 14.4491C5.03007 18.0551 7.97677 21 11.615 21C15.2533 21 18.2 18.0551 18.2 14.419C18.2 11.384 16.0952 8.79967 13.2688 8.07846ZM8.72847 6.06511L10.1718 3.57095H13.0884L14.5317 6.06511L12.5772 7.92821C12.2765 7.89816 11.9458 7.86811 11.6451 7.86811C11.3144 7.86811 11.0137 7.89816 10.713 7.92821L8.72847 6.06511ZM11.615 20.399C8.30752 20.399 5.63144 17.7245 5.63144 14.419C5.63144 11.1135 8.30752 8.46911 11.615 8.46911C14.9226 8.46911 17.5986 11.1436 17.5986 14.4491C17.5986 17.7546 14.9226 20.399 11.615 20.399Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.2\"><\/path>\n<\/svg>",
-            "image_icon": "shopify:\/\/shop_images\/icon4.svg",
+            "icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13.2688 8.07846L15.103 6.33556C15.1932 6.24541 15.2232 6.09516 15.1631 5.97496L13.5093 3.15025C13.4492 3.0601 13.359 3 13.2387 3H9.96128C9.841 3 9.7508 3.0601 9.69066 3.15025L8.0369 5.97496C7.97677 6.09516 7.97677 6.24541 8.09704 6.33556L9.93121 8.07846C7.10478 8.82972 5 11.384 5 14.4491C5.03007 18.0551 7.97677 21 11.615 21C15.2533 21 18.2 18.0551 18.2 14.419C18.2 11.384 16.0952 8.79967 13.2688 8.07846ZM8.72847 6.06511L10.1718 3.57095H13.0884L14.5317 6.06511L12.5772 7.92821C12.2765 7.89816 11.9458 7.86811 11.6451 7.86811C11.3144 7.86811 11.0137 7.89816 10.713 7.92821L8.72847 6.06511ZM11.615 20.399C8.30752 20.399 5.63144 17.7245 5.63144 14.419C5.63144 11.1135 8.30752 8.46911 11.615 8.46911C14.9226 8.46911 17.5986 11.1436 17.5986 14.4491C17.5986 17.7546 14.9226 20.399 11.615 20.399Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.2\"></path>\n</svg>",
+            "image_icon": "shopify://shop_images/bracelet_2.svg",
             "link_block": "",
             "button": "",
             "style_btn": "btn-underline"
@@ -248,7 +248,7 @@
         "setwidth": "container",
         "bgsection": "#f5f5f5",
         "title_top": "",
-        "title": "Make Us A Part Of Your  Skincare Journey.",
+        "title": "Make Us A Part Of Your Style Journey.",
         "des": "Elevating the skincare experience is our value, Trust in authenticity of your skincare choices",
         "align-heading": "center",
         "paddingbox": "0px 0px 0px 0px",
@@ -279,9 +279,9 @@
             "bgtext": "#ede9a0",
             "title_color": "rgba(0,0,0,0)",
             "subtitle": "",
-            "title": "Where Beauty Meets Innovation",
+            "title": "Mission Statement",
             "size_text": "h2",
-            "text": "<div class=\"p\">\n<p>Our journey began with a simple idea: to create a skincare brand that celebrates the unique beauty in everyone. <\/p>\n      <\/div>",
+            "text": "<div class=\"p\">\nAt GBL Accessories, our mission is to provide timeless, high-quality, non-tarnish, and\nhypoallergenic gold-plated jewellery that empowers women to express their style with\nconfidence. We are committed to offering timeless, elegant, affordable, Aesthetic and\ndurable pieces that enhance beauty without compromising comfort.\nVision      </div>",
             "answer_content": "",
             "style_btn": "btn-underline btn-underline-white",
             "button": "",
@@ -294,7 +294,7 @@
         "template--16716887458110__24a28133-2e01-4361-8b00-ad164f72336f-1666686767d1a98887-0": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/s111.jpg"
+            "image": "shopify://shop_images/aim.jpg"
           }
         }
       },
@@ -323,7 +323,7 @@
         "image_block_jmaaCa": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/s11.jpg"
+            "image": "shopify://shop_images/aim.jpg"
           }
         },
         "text_block_QrRdqD": {
@@ -333,9 +333,9 @@
             "bgtext": "#fbf4e9",
             "title_color": "rgba(0,0,0,0)",
             "subtitle": "",
-            "title": "We're Dedicated To Providing High Quality Skincare Solutions                    .",
+            "title": "Vision Statement",
             "size_text": "h2",
-            "text": "<div class=\"p\">\n<p>Our products are crafted with meticulously selected ingredients, combining the best of nature and science to deliver visible results. We prioritize safety, efficacy, and sustainability in every step of our process. <\/p>\n      <\/div>",
+            "text": "<div class=\"p\">\n<p>Our vision is to become the go-to jewellery brand for women seeking timeless, skin-\nfriendly, and long-lasting accessories. We aim to redefine affordable luxury by ensuring\n\nevery piece radiates elegance, durability, and self-expression, while continuously\ninnovating to meet the needs of our customers. </p>\n      </div>",
             "answer_content": "",
             "style_btn": "btn-underline btn-underline-white",
             "button": "",
@@ -450,37 +450,34 @@
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-0": {
           "type": "member",
           "settings": {
-            "image": "shopify:\/\/shop_images\/328108127_191027206851812_8364381558006982062_n.jpg",
             "name": "Abdul Khalek",
             "position": "CEO & Founder",
-            "twitter": "https:\/\/twitter.com\/",
-            "google": "https:\/\/plus.google.com",
-            "facebook": "https:\/\/www.facebook.com\/",
-            "linkedin": "https:\/\/www.linkedin.com\/"
+            "twitter": "https://twitter.com/",
+            "google": "https://plus.google.com",
+            "facebook": "https://www.facebook.com/",
+            "linkedin": "https://www.linkedin.com/"
           }
         },
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-1": {
           "type": "member",
           "settings": {
-            "image": "shopify:\/\/shop_images\/328173661_5942314722481095_5142681957899733239_n.jpg",
             "name": "Vera Duncan",
             "position": "Producer",
-            "twitter": "https:\/\/twitter.com\/",
-            "google": "https:\/\/plus.google.com",
-            "facebook": "https:\/\/www.facebook.com\/",
-            "linkedin": "https:\/\/www.linkedin.com\/"
+            "twitter": "https://twitter.com/",
+            "google": "https://plus.google.com",
+            "facebook": "https://www.facebook.com/",
+            "linkedin": "https://www.linkedin.com/"
           }
         },
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2": {
           "type": "member",
           "settings": {
-            "image": "shopify:\/\/shop_images\/308508113_8592200560793936_3665473801966910106_n.jpg",
             "name": "Michella Ore",
             "position": "Developer",
-            "twitter": "https:\/\/twitter.com\/",
-            "google": "https:\/\/plus.google.com",
-            "facebook": "https:\/\/www.facebook.com\/",
-            "linkedin": "https:\/\/www.linkedin.com\/"
+            "twitter": "https://twitter.com/",
+            "google": "https://plus.google.com",
+            "facebook": "https://www.facebook.com/",
+            "linkedin": "https://www.linkedin.com/"
           }
         },
         "da71da3f-22ff-40d5-be4f-f445f70629e5": {
@@ -502,6 +499,7 @@
         "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2",
         "da71da3f-22ff-40d5-be4f-f445f70629e5"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade",
         "setwidth": "container",
@@ -520,14 +518,15 @@
     },
     "a035e328-7cfe-4cf0-81d0-e2f5f0188740": {
       "type": "map",
+      "disabled": true,
       "settings": {
         "heading": "Our store",
-        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
+        "address": "",
         "map_address": "301 Front St W, Toronto",
         "button_text": "Get directions",
         "show_pin": true,
         "api_key": "",
-        "map_code": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https:\/\/maps.google.com\/maps?q=CN%20Tower,%20301%20Front%20St%20W,%20Toronto,%20ON%20M5V%202T6,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" loading=\"lazy\" allowfullscreen><\/iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}<\/style>\n<a href=\"https:\/\/www.embedgooglemap.net\">google maps code generator<\/a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}<\/style>\n<\/div><\/div>",
+        "map_code": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=CN%20Tower,%20301%20Front%20St%20W,%20Toronto,%20ON%20M5V%202T6,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" loading=\"lazy\" allowfullscreen></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>\n<a href=\"https://www.embedgooglemap.net\">google maps code generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>\n</div></div>",
         "background_image_position": "center center"
       }
     },
@@ -540,7 +539,7 @@
         "title": "Send us an email",
         "des": "",
         "align-heading": "center",
-        "answer_content": "<p>This site is protected by reCAPTCHA and the Google <a href=\"https:\/\/policies.google.com\/privacy\">Privacy Policy<\/a> and <a href=\"https:\/\/policies.google.com\/terms\">Terms of Service<\/a> apply.<\/p>",
+        "answer_content": "<p>This site is protected by reCAPTCHA and the Google <a href=\"https://policies.google.com/privacy\">Privacy Policy</a> and <a href=\"https://policies.google.com/terms\">Terms of Service</a> apply.</p>",
         "paddingsection": "100px 0px 100px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",

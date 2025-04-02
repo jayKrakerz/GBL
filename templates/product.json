@@ -155,6 +155,7 @@
         },
         "11f6643a-6bb6-4db9-a512-9c0eefc8c3b8": {
           "type": "countdown",
+          "disabled": true,
           "settings": {
             "title_heading": "🔥 Sale ends in !"
           }
@@ -169,6 +170,7 @@
         },
         "2830007b-b9f5-4f33-86cf-680e0a91ca8d": {
           "type": "tabcustom",
+          "disabled": true,
           "settings": {
             "title_tab": "Shipping information",
             "icon": "none",
@@ -178,6 +180,7 @@
         },
         "0a71f30d-dba2-4bca-a64d-c3cc2ed17e7d": {
           "type": "tabcustom",
+          "disabled": true,
           "settings": {
             "title_tab": "Size Guide",
             "icon": "none",
@@ -270,8 +273,8 @@
       ],
       "settings": {
         "setwidth": "container",
-        "media_style": "media-list",
-        "media_size": "normal",
+        "media_style": "media-bottom",
+        "media_size": "small",
         "image_size": "portrait",
         "enable_video_looping": true,
         "stock_enable": true,
@@ -355,6 +358,7 @@
         "147e9960-c5fe-44f4-8469-9583a9752a0a",
         "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
@@ -364,6 +368,27 @@
         "paddingmobile": "32px 0px 32px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "1743619718e56443c4": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_qaTX9g": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_qaTX9g"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px",
+        "bgsection": "#ffffff"
       }
     },
     "grid_banner_2_WTTJxw": {
@@ -545,6 +570,7 @@
         "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-0",
         "template--14684877652053__70b7f2d2-4c12-4305-88bd-da89e2d18d5b-1665853262e19e6bf8-2"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
@@ -673,6 +699,7 @@
     "main",
     "product-requently",
     "product-content",
+    "1743619718e56443c4",
     "grid_banner_2_WTTJxw",
     "image_content_QL6NcG",
     "70b7f2d2-4c12-4305-88bd-da89e2d18d5b",

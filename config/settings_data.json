@@ -14,7 +14,7 @@
     "slideshow": "slideshow-1",
     "sectionheading": "heading-1",
     "loading": "border",
-    "favicon": "shopify://shop_images/favicon.png",
+    "favicon": "shopify://shop_images/GBL_LOGO.png",
     "meta_description": "Cadiant Shopify Template with multiple layouts and styles allows you to create different structures and satisfies any specific requirements for different kinds of business.",
     "enable_radius_allimg": false,
     "color_primary": "#252525",
@@ -87,10 +87,13 @@
     "font_weight_sub": "500",
     "base_size_sup": 14,
     "letter_spacing_sub": 0.1,
-    "main_linklist": "main-menu-1",
-    "currency_enable_image": true,
+    "main_linklist": "new-menu",
+    "lang_enable": false,
+    "currency_enable": false,
+    "currency_enable_image": false,
     "selector_enable_name": false,
-    "mobile_phone": "+012 345 678",
+    "mobile_phone": "+44 758 482 8264",
+    "mobile_email": "gblaccessories55@gmail.com",
     "enable_post": false,
     "enable_article": false,
     "enable_collection": false,
@@ -126,7 +129,7 @@
     "sidebar_html": "<a href=\"#\"> <img class=\"lybn-lazyload lazyload\" alt=\"banner blog\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0781/3637/7664/files/169699320_203975937820072_6948305125395007791_n.jpg?v=1691255806\">\n</a>",
     "enable_compare": true,
     "enable_wishlsit": true,
-    "page_wishlist": "wishlist",
+    "page_wishlist": "wish-list",
     "enable_popuptext": true,
     "enable_popuptext_new": "Get 15% Off",
     "predictive_search_show_vendor": false,
@@ -180,7 +183,7 @@
     "padding_hoz_btn": 70,
     "height_border_btn": 1,
     "input_round": 0,
-    "svg_cart": "cart-7",
+    "svg_cart": "cart-6",
     "cartdraw": true,
     "e_notecart": true,
     "title_upsell": "You may also like",
@@ -188,7 +191,7 @@
     "coupon_code_enable": true,
     "coupon_code_title": "List Coupon",
     "coupon_code_content": "<p><strong>Pose</strong> → 20% off all collections</p><p>Coupon code will work on checkout page</p>",
-    "free_shipping_enable": true,
+    "free_shipping_enable": false,
     "free_shipping_value": 1000,
     "free_end": "for Free Shipping",
     "free_shipping_text": "Your order is free delivery !",
@@ -2445,7 +2448,19 @@
       "1660900735d9374b53",
       "16609007639672b3d5",
       "1660925094098c539e"
-    ]
+    ],
+    "blocks": {
+      "17932116065945454919": {
+        "type": "shopify://apps/adt-facebook-pixels-ads/blocks/facebook-ads-pixels/4ad3004f-fa0b-4587-a4f1-4d8ce89e9fbb",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "presets": {
     "Classic": {

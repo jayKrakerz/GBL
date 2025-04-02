@@ -144,18 +144,18 @@
     "product_tab_KnDJEt": {
       "type": "product-tab",
       "blocks": {
-        "collection_kCgRHN": {
-          "type": "collection",
-          "settings": {
-            "title": "Rings",
-            "collection": "rings"
-          }
-        },
         "collection_YhyNbW": {
           "type": "collection",
           "settings": {
             "title": "Necklace",
             "collection": "necklace"
+          }
+        },
+        "collection_kCgRHN": {
+          "type": "collection",
+          "settings": {
+            "title": "Rings",
+            "collection": "rings"
           }
         },
         "collection_WA6YcE": {
@@ -167,11 +167,10 @@
         }
       },
       "block_order": [
-        "collection_kCgRHN",
         "collection_YhyNbW",
+        "collection_kCgRHN",
         "collection_WA6YcE"
       ],
-      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
@@ -831,6 +830,7 @@
         "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-1",
         "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-2"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
@@ -851,6 +851,27 @@
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "1743619031ec8ad6b7": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_featured_reviews_carousel_AEdkcT": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_featured_reviews_carousel_AEdkcT"
+      ],
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px",
+        "bgsection": "#ffffff"
       }
     },
     "e2e754bf-d47e-4ef9-8fd7-1ced7e029d74": {
@@ -1098,6 +1119,7 @@
     "product_list_rMPrEt",
     "662cf23c-2a28-41c4-9bd8-b6517c99ba49",
     "811a6110-0ea8-4aca-b4ad-843c1574e2f6",
+    "1743619031ec8ad6b7",
     "e2e754bf-d47e-4ef9-8fd7-1ced7e029d74",
     "3fb03ff7-25ae-4f7b-8179-3e29c80906fd",
     "5e6d27a3-1163-46d3-a128-345487900584",

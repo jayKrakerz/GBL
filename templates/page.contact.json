@@ -19,7 +19,7 @@
         "template--16736981025086__e7285e43-2bb7-46e5-a5e4-538568d8723e-1666759876b5fa9979-0": {
           "type": "image_block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/d803cc166209333.64143251221e6.webp"
+            "image": "shopify://shop_images/faq-img.jpg"
           }
         },
         "template--16736981025086__e7285e43-2bb7-46e5-a5e4-538568d8723e-1666759876b5fa9979-1": {
@@ -29,13 +29,13 @@
             "bgtext": "rgba(0,0,0,0)",
             "title_color": "rgba(0,0,0,0)",
             "subtitle": "Questions?",
-            "title": "We're here to help with sizing, stylingand anything else, 3 Year Warranty, Extended 90 Day Returns, Expedited Shipping",
+            "title": "We're here to help with sizing, styling, a 3-year warranty, 90-day returns, and expedited shipping.",
             "size_text": "h3",
             "text": "",
             "answer_content": "",
             "style_btn": "btn-theme",
             "button": "Read Faqs",
-            "link": "shopify:\/\/pages\/faqs",
+            "link": "shopify://pages/faq",
             "enable_padding": false,
             "block_align": "center",
             "align": "left"
@@ -71,7 +71,7 @@
             "title": "MADE IN THE USA",
             "description": "Fully assembled and handmade in America.",
             "type_icon": "svg",
-            "icon": "<i class=\"icon-placeholder\"><\/i>",
+            "icon": "<i class=\"icon-placeholder\"></i>",
             "link_block": "",
             "button": "",
             "style_btn": "btn-underline"
@@ -84,7 +84,7 @@
             "title": "AUTHENTIC QUALITY",
             "description": "Impeccably printed on authentic artist-grade <br> photo paper.",
             "type_icon": "img",
-            "icon": "<i class=\"icon-phone\"><\/i>",
+            "icon": "<i class=\"icon-phone\"></i>",
             "link_block": "",
             "button": "",
             "style_btn": "btn-underline"
@@ -97,7 +97,7 @@
             "title": "FRAME INCLUDED",
             "description": "Free solid wood frame included with <br> each artwork.",
             "type_icon": "img",
-            "icon": "<i class=\"icon-check-circle\"><\/i>",
+            "icon": "<i class=\"icon-check-circle\"></i>",
             "link_block": "",
             "button": "",
             "style_btn": "btn-underline"
@@ -110,7 +110,7 @@
             "title": "FREE SHIPPING",
             "description": "Ship within 10-12 days to us and Canada.",
             "type_icon": "img",
-            "icon": "<i class=\"icon-mail\"><\/i>",
+            "icon": "<i class=\"icon-mail\"></i>",
             "link_block": "",
             "button": "",
             "style_btn": "btn-underline"
@@ -171,69 +171,8 @@
         "title": "Got Any Questions?",
         "des": "Use the form below to get in touch with the sales team",
         "align-heading": "center",
-        "answer_content": "<p>This site is protected by reCAPTCHA and the Google <a href=\"https:\/\/policies.google.com\/privacy\">Privacy Policy<\/a> and <a href=\"https:\/\/policies.google.com\/terms\">Terms of Service<\/a> apply.<\/p>",
+        "answer_content": "<p>This site is protected by reCAPTCHA and the Google <a href=\"https://policies.google.com/privacy\">Privacy Policy</a> and <a href=\"https://policies.google.com/terms\">Terms of Service</a> apply.</p>",
         "paddingsection": "80px 0px 80px 0px",
-        "paddingmobile": "40px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
-      }
-    },
-    "image_content_iHwzJb": {
-      "type": "image-content",
-      "blocks": {
-        "text_block_fP4xWr": {
-          "type": "text_block",
-          "settings": {
-            "width": "100%",
-            "bgtext": "#ede9a0",
-            "title_color": "rgba(0,0,0,0)",
-            "subtitle": "",
-            "title": "Flawless Co.",
-            "size_text": "h2",
-            "text": "",
-            "answer_content": "<p>1234 Elm Street, Suite 567, Springfield Illinois 62704, United States<\/p>",
-            "style_btn": "btn-theme",
-            "button": "Get Directions",
-            "link": "",
-            "enable_padding": true,
-            "block_align": "center",
-            "align": "left"
-          }
-        },
-        "text_block_mQ7zpG": {
-          "type": "text_block",
-          "settings": {
-            "width": "100%",
-            "bgtext": "#ede9a0",
-            "title_color": "rgba(0,0,0,0)",
-            "subtitle": "",
-            "title": "Flawless Skincare",
-            "size_text": "h2",
-            "text": "",
-            "answer_content": "<p>789 Maple Avenue, Unit 321, Greenville California 90210, United States<\/p>",
-            "style_btn": "btn-theme",
-            "button": "get direction",
-            "link": "",
-            "enable_padding": true,
-            "block_align": "center",
-            "align": "left"
-          }
-        }
-      },
-      "block_order": [
-        "text_block_fP4xWr",
-        "text_block_mQ7zpG"
-      ],
-      "settings": {
-        "animation": "",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "rangebg": 0,
-        "bgbefore": "rgba(0,0,0,0)",
-        "bg_pos": "left",
-        "enable_padding": true,
-        "align_center": true,
-        "paddingsection": "40px 0px 80px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px"
@@ -241,14 +180,15 @@
     },
     "e47bb256-2659-485f-9896-382aaec96e87": {
       "type": "map",
+      "disabled": true,
       "settings": {
         "heading": "Our store",
-        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
+        "address": "<p>123 Fake St.<br/>Toronto, Canada</p><p>Mon - Fri, 10am - 9pm<br/>Saturday, 11am - 9pm<br/>Sunday, 11am - 5pm</p>",
         "map_address": "301 Front St W, Toronto",
         "button_text": "Get directions",
         "show_pin": true,
         "api_key": "",
-        "map_code": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https:\/\/maps.google.com\/maps?q=CN%20Tower,%20301%20Front%20St%20W,%20Toronto,%20ON%20M5V%202T6,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" loading=\"lazy\" allowfullscreen><\/iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}<\/style>\n<a href=\"https:\/\/www.embedgooglemap.net\">google maps code generator<\/a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}<\/style>\n<\/div><\/div>",
+        "map_code": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=CN%20Tower,%20301%20Front%20St%20W,%20Toronto,%20ON%20M5V%202T6,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" loading=\"lazy\" allowfullscreen></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>\n<a href=\"https://www.embedgooglemap.net\">google maps code generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>\n</div></div>",
         "background_image_position": "center center"
       }
     },
@@ -259,21 +199,21 @@
           "type": "faq",
           "settings": {
             "faq_title": "How long will shipping take?",
-            "faq_des": "<p>All orders are shipped within 12-36 hours from our warehouse in Bellingham WA.  Delivery times will depend on your shipping option but all orders are tracked from our facility to your door.  <\/p>"
+            "faq_des": "<p>All orders are shipped within 12-36 hours from our warehouse in Bellingham WA.  Delivery times will depend on your shipping option but all orders are tracked from our facility to your door.  </p>"
           }
         },
         "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-1": {
           "type": "faq",
           "settings": {
             "faq_title": "How do I know if my order is confirmed?",
-            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>"
+            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
           }
         },
         "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-2": {
           "type": "faq",
           "settings": {
             "faq_title": "Can I change my shipping address after my order is placed?",
-            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.<\/p>"
+            "faq_des": "<p>This is an example of a response that you might give. It's good to be as thorough as possible in responses as that has a tendency to improve trust overall.</p>"
           }
         }
       },
@@ -282,6 +222,7 @@
         "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-1",
         "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-2"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
@@ -312,7 +253,6 @@
     "fb754d90-39ba-47df-8255-8b3096ae9437",
     "c025329d-7132-4163-b678-b778c06ac8f9",
     "863c2be4-cbba-4ba1-ba39-64e0fe639fc6",
-    "image_content_iHwzJb",
     "e47bb256-2659-485f-9896-382aaec96e87",
     "a1490854-4f8f-471c-864a-2fb0e79e264b"
   ]
