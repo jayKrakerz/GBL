@@ -1,0 +1,354 @@
+{% comment %}
+  GBL Similar Styles Section
+  - Shows products similar to the current product
+  - Clean cards with images and prices
+  - Matches the styling of other GBL sections
+{% endcomment %}
+
+{%- style -%}
+    .gbl-similar-styles {
+      padding: 0 0 40px;
+      background-color: {{ section.settings.background_color }};
+    }
+  
+    .gbl-similar-styles__container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+    .gbl-similar-styles__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  
+    .gbl-similar-styles__title {
+      font-size: 18px;
+      font-weight: 500;
+      color: {{ section.settings.title_color }};
+    }
+  
+    .gbl-similar-styles__shop-all {
+      display: inline-block;
+      padding: 5px 15px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      font-size: 14px;
+      text-decoration: none;
+      color: {{ section.settings.text_color }};
+      transition: all 0.3s ease;
+    }
+  
+    .gbl-similar-styles__shop-all:hover {
+      border-color: {{ section.settings.accent_color }};
+      background-color: rgba(212, 175, 55, 0.1);
+    }
+  
+    .gbl-similar-styles__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  
+    .gbl-similar-styles__card {
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    .gbl-similar-styles__image-wrapper {
+      position: relative;
+      padding-bottom: 100%;
+      overflow: hidden;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  
+    .gbl-similar-styles__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+  
+    .gbl-similar-styles__card:hover .gbl-similar-styles__image {
+      transform: scale(1.05);
+    }
+  
+    .gbl-similar-styles__quick-view {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 8px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-align: center;
+      font-size: 12px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  
+    .gbl-similar-styles__card:hover .gbl-similar-styles__quick-view {
+      opacity: 1;
+    }
+  
+    .gbl-similar-styles__info {
+      text-align: center;
+    }
+  
+    .gbl-similar-styles__name {
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: {{ section.settings.title_color }};
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  
+    .gbl-similar-styles__price {
+      font-size: 14px;
+      font-weight: 500;
+      color: {{ section.settings.text_color }};
+    }
+  
+    .gbl-similar-styles__rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 5px;
+    }
+  
+    .gbl-similar-styles__stars {
+      color: #FFC107;
+      font-size: 12px;
+    }
+  
+    .gbl-similar-styles__rating-value {
+      font-size: 12px;
+      color: {{ section.settings.text_color }};
+    }
+  
+    @media screen and (max-width: 768px) {
+      .gbl-similar-styles__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  
+    @media screen and (max-width: 480px) {
+      .gbl-similar-styles__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  {%- endstyle -%}
+  
+  <div class="gbl-similar-styles">
+    <div class="gbl-similar-styles__container">
+      <div class="gbl-similar-styles__header">
+        <h3 class="gbl-similar-styles__title">{{ section.settings.title }}</h3>
+        <a href="{{ section.settings.collection_link }}" class="gbl-similar-styles__shop-all">{{ section.settings.shop_all_text }}</a>
+      </div>
+      
+      <div class="gbl-similar-styles__grid">
+        {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+            {% if block.settings.product != blank %}
+              <a href="{{ block.settings.product.url }}" class="gbl-similar-styles__card" {{ block.shopify_attributes }}>
+                <div class="gbl-similar-styles__image-wrapper">
+                  {% if block.settings.product.featured_image %}
+                    {{ block.settings.product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: block.settings.product.title, class: 'gbl-similar-styles__image' }}
+                  {% else %}
+                    {{ 'product-1' | placeholder_svg_tag: 'gbl-similar-styles__image' }}
+                  {% endif %}
+                  <div class="gbl-similar-styles__quick-view">Quick View</div>
+                </div>
+                
+                <div class="gbl-similar-styles__info">
+                  <div class="gbl-similar-styles__name">{{ block.settings.product.title }}</div>
+                  <div class="gbl-similar-styles__price">{{ block.settings.product.price | money }}</div>
+                  {% if block.settings.rating %}
+                    <div class="gbl-similar-styles__rating">
+                      <div class="gbl-similar-styles__stars">★★★★★</div>
+                      <span class="gbl-similar-styles__rating-value">{{ block.settings.rating }}</span>
+                    </div>
+                  {% endif %}
+                </div>
+              </a>
+            {% endif %}
+          {% endfor %}
+        {% else %}
+          {% if product.collections.first %}
+            {% assign similar_collection = product.collections.first %}
+            {% for similar_product in similar_collection.products limit: 3 %}
+              {% if similar_product.id != product.id %}
+                <a href="{{ similar_product.url }}" class="gbl-similar-styles__card">
+                  <div class="gbl-similar-styles__image-wrapper">
+                    {% if similar_product.featured_image %}
+                      {{ similar_product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: similar_product.title, class: 'gbl-similar-styles__image' }}
+                    {% else %}
+                      {{ 'product-1' | placeholder_svg_tag: 'gbl-similar-styles__image' }}
+                    {% endif %}
+                    <div class="gbl-similar-styles__quick-view">Quick View</div>
+                  </div>
+                  
+                  <div class="gbl-similar-styles__info">
+                    <div class="gbl-similar-styles__name">{{ similar_product.title }}</div>
+                    <div class="gbl-similar-styles__price">{{ similar_product.price | money }}</div>
+                    {% if similar_product.metafields.reviews.rating %}
+                      <div class="gbl-similar-styles__rating">
+                        <div class="gbl-similar-styles__stars">
+                          {% assign rating = similar_product.metafields.reviews.rating.value | round: 1 %}
+                          {% if rating >= 5 %}
+                            ★★★★★
+                          {% elsif rating >= 4.5 %}
+                            ★★★★½
+                          {% elsif rating >= 4 %}
+                            ★★★★☆
+                          {% elsif rating >= 3.5 %}
+                            ★★★½☆
+                          {% elsif rating >= 3 %}
+                            ★★★☆☆
+                          {% elsif rating >= 2.5 %}
+                            ★★½☆☆
+                          {% elsif rating >= 2 %}
+                            ★★☆☆☆
+                          {% elsif rating >= 1.5 %}
+                            ★½☆☆☆
+                          {% elsif rating >= 1 %}
+                            ★☆☆☆☆
+                          {% else %}
+                            ☆☆☆☆☆
+                          {% endif %}
+                        </div>
+                        <span class="gbl-similar-styles__rating-value">{{ rating }}</span>
+                      </div>
+                    {% endif %}
+                  </div>
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% else %}
+            {% assign recommended_products = collections.all.products | limit: 3 %}
+            {% for recommended_product in recommended_products %}
+              <a href="{{ recommended_product.url }}" class="gbl-similar-styles__card">
+                <div class="gbl-similar-styles__image-wrapper">
+                  {% if recommended_product.featured_image %}
+                    {{ recommended_product.featured_image | image_url: width: 300 | image_tag: loading: 'lazy', alt: recommended_product.title, class: 'gbl-similar-styles__image' }}
+                  {% else %}
+                    {{ 'product-1' | placeholder_svg_tag: 'gbl-similar-styles__image' }}
+                  {% endif %}
+                  <div class="gbl-similar-styles__quick-view">Quick View</div>
+                </div>
+                
+                <div class="gbl-similar-styles__info">
+                  <div class="gbl-similar-styles__name">{{ recommended_product.title }}</div>
+                  <div class="gbl-similar-styles__price">{{ recommended_product.price | money }}</div>
+                </div>
+              </a>
+            {% endfor %}
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  
+  {% schema %}
+  {
+    "name": "Similar Styles",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Similar Style"
+      },
+      {
+        "type": "text",
+        "id": "shop_all_text",
+        "label": "Shop All button text",
+        "default": "Shop Similar"
+      },
+      {
+        "type": "url",
+        "id": "collection_link",
+        "label": "Collection Link",
+        "default": "/collections/all"
+      },
+      {
+        "type": "header",
+        "content": "Style settings"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text color",
+        "default": "#333333"
+      },
+      {
+        "type": "color",
+        "id": "accent_color",
+        "label": "Accent color",
+        "default": "#d4af37"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Similar Product",
+        "type": "product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type": "text",
+            "id": "rating",
+            "label": "Rating (optional)",
+            "info": "Enter a rating value like 4.5"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "GBL Similar Styles",
+        "blocks": [
+          {
+            "type": "product"
+          },
+          {
+            "type": "product"
+          },
+          {
+            "type": "product"
+          }
+        ]
+      }
+    ]
+  }
+  {% endschema %}
