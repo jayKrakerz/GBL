@@ -1,3 +1,15 @@
+.deferred-media{
+  display: block;
+}
+.deferred-media.media>*:not(.zoom):not(.deferred-media__poster-button), .deferred-media.media model-viewer {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 .product__xr-button {
   background: rgba(var(--color-foreground), 0.08);
   color: rgb(var(--color-foreground));

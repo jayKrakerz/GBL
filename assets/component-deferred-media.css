@@ -7,7 +7,6 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
-  border-radius: calc(var(--border-radius) - var(--border-width));
 }
 
 .media > .deferred-media__poster {
@@ -20,10 +19,12 @@
   width: auto;
   max-width: 100%;
   height: 100%;
+  margin: 0 auto;
 }
 
 .deferred-media {
   overflow: hidden;
+  position: relative;
 }
 
 .deferred-media:not([loaded]) template {
@@ -31,28 +32,19 @@
 }
 
 .deferred-media[loaded] > .deferred-media__poster {
-  display: none;
+  display: none !important;
 }
 
 .deferred-media__poster:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 var(--media-border-width) rgba(var(--color-foreground), var(--media-border-opacity)),
-    0 0 0 calc(var(--media-border-width) + 0.3rem) rgb(var(--color-background)),
-    0 0 0 calc(var(--media-border-width) + 0.5rem) rgba(var(--color-foreground), 0.5);
+  box-shadow: 0 0 0 var(--media-border-width) rgba(var(--color-foreground), var(--media-border-opacity)), 0 0 0 calc(var(--media-border-width) + 0.3rem) rgb(var(--color-background)),0 0 0 calc(var(--media-border-width) + 0.5rem) rgba(var(--color-foreground),.5);
   border-radius: calc(var(--media-radius) - var(--media-border-width));
 }
 
 .deferred-media__poster:focus {
   outline: none;
-  box-shadow: 0 0 0 var(--media-border-width) rgba(var(--color-foreground), var(--media-border-opacity)),
-    0 0 0 calc(var(--media-border-width) + 0.3rem) rgb(var(--color-background)),
-    0 0 0 calc(var(--media-border-width) + 0.5rem) rgba(var(--color-foreground), 0.5);
+  box-shadow: 0 0 0 var(--media-border-width) rgba(var(--color-foreground), var(--media-border-opacity)), 0 0 0 calc(var(--media-border-width) + 0.3rem) rgb(var(--color-background)),0 0 0 calc(var(--media-border-width) + 0.5rem) rgba(var(--color-foreground),.5);
   border-radius: calc(var(--media-radius) - var(--media-border-width));
-}
-
-.global-media-settings--full-width .deferred-media__poster,
-.global-media-settings--full-width .deferred-media__poster:is(:focus, :focus-visible) {
-  border-radius: 0;
 }
 
 /* outline styling for Windows High Contrast Mode */
@@ -67,15 +59,15 @@
 }
 
 .deferred-media__poster-button {
-  background-color: rgb(var(--color-background));
+  background-color: white;
   border: 0.1rem solid rgba(var(--color-foreground), 0.1);
   border-radius: 50%;
   color: rgb(var(--color-foreground));
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 6.2rem;
-  width: 6.2rem;
+  height: 4rem;
+  width: 4rem;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -84,15 +76,33 @@
   z-index: 1;
 }
 
-.deferred-media__poster-button:hover {
-  transform: translate(-50%, -50%) scale(1.1);
-}
 
 .deferred-media__poster-button .icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .deferred-media__poster-button .icon-play {
   margin-left: 0.2rem;
 }
+.thumbnail__badge{
+  height: 1.5rem;
+  width: 1.5rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  background: white;
+  border-radius: 0;
+  border:.1rem solid rgba(var(--color-foreground),.1);
+}
+.thumbnail__badge-video svg{
+  margin-left: 2px;
+}
+.thumbnail__badge svg{
+  width: 0.7rem;
+  height: 0.7rem;
+}
+

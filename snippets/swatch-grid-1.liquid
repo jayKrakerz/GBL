@@ -1,0 +1,95 @@
+{%- if settings.e_swatch -%}
+  {%- liquid
+    assign option_limit = 4
+    for option in product.options_with_values
+      assign matching_option_names  = settings.contain_color | split: ','
+      assign use_color = false 
+      for option_color in matching_option_names 
+          if option_color == option.name 
+              assign use_color = true 
+              break
+          endif 
+      endfor
+      if use_color
+          assign enable_swatch = true
+      endif
+    endfor
+  -%}
+<ul class="product-card__swatch list-unstyled {% if settings.swatch_color %} sw_color{% endif %} {% if settings.swatch_color_circle %}round-color{% endif %} {% if enable_swatch %} show {% else %} hide {% endif %}">
+  
+{%- for option in product.options_with_values -%}
+    {%- liquid
+      assign matching_option_names = settings.contain_color | split:","
+      assign use_color = false 
+      for option_color in matching_option_names 
+          if option_color == option.name 
+              assign use_color = true 
+              break
+          endif 
+      endfor
+  -%}
+  {%- if use_color -%}
+    {%- for value in option.values limit: option_limit -%}
+      {% liquid
+        assign active = ''
+        assign variant_url = ''
+        assign media = ''
+
+        assign option_index = option.position  | minus: 1
+            for variant in product.variants
+                if variant.title contains value
+                    if variant.image.id == product.featured_image.id
+                        assign active = 'active'
+                    endif
+                    assign variant_url = variant.url
+                    assign price = variant.price
+                    assign id = variant.id
+                endif
+
+                if variant.options[option_index] == value
+                    assign media =  variant.image
+                break
+            endif
+        endfor
+      %}
+      {%- if settings.swatch_color -%}
+        <li  
+      class="js-swatch-card-item st-tooltip-top {{ active }}" 
+      data-url="{{ variant_url }}" 
+      data-id="{{ id }}" 
+      data-image="{{ media |  image_url: width: 720 }}" 
+      data-price="{{ price }}">
+        <span class="st-tooltip__content">{{ value | escape }}</span>
+        <span
+        class="st-color-{{ value | escape | downcase | handle }}"
+        style="background-color:{{ value | escape | downcase | handle }};" 
+          > </span>
+      </li>
+      {% else %}
+        <li  
+        class="js-swatch-card-item st-tooltip-top {{ active }}" 
+        data-url="{{ variant_url }}" 
+        data-id="{{ id }}" 
+        data-image="{{ media |  image_url: width: 720 }}" 
+        data-price="{{ price }}">
+          <img data-sizes="auto" 
+            src="{{ media | image_url: width: 100, height: 100 }}" 
+            class="lazyload" 
+            data-src="{{ media | image_url: width: 100, height: 100 }}" 
+            alt="{{ media.alt }}" 
+            loading="lazy"
+            width="{{ media.width }}"
+            height="{{ media.height }}"
+          />
+        </li>
+      {%- endif -%}
+  {%- endfor -%}
+  {%- if option.values.size > option_limit -%}
+      {%- assign remaining = option.values.size | minus: option_limit -%}
+      <li><a href="{{ product.url }}" class="small swatch-more" title="{{ 'products.product.view_more' | t }}">+ {{ remaining }} </a></li>
+  {%- endif -%}
+  {% endif %}
+{%- endfor -%}
+</ul>
+
+{%- endif -%}

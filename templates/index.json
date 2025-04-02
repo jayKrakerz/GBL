@@ -9,270 +9,1098 @@
  */
 {
   "sections": {
-    "gbl_hero_rCzgxM": {
-      "type": "gbl-hero",
+    "42c9748e-ce08-4187-92e7-c4e3c162c249": {
+      "type": "scrolling-text",
       "blocks": {
-        "banner_slider_GX7in3": {
-          "type": "banner_slider",
+        "item_PcB4iG": {
+          "type": "item",
           "settings": {
-            "ban_img": "shopify://shop_images/gbl-hero.png",
-            "ban_link": "shopify://collections/all",
-            "heading_line1": "Shine",
-            "heading_line2": "Bright Like",
-            "heading_accent": "a Diamond",
-            "text": "If there was a choice on spending a lot of money on accessories or dresses, I always chose accessories. I think jewelry can change an outfit more than anything else",
-            "button_text": "Shop Now"
+            "code": "BRIDAL GOLD JEWELRY"
           }
         },
-        "banner_slider_6rYJHW": {
-          "type": "banner_slider",
+        "867ea529-0999-4c33-b6fc-903cd11ddf0a": {
+          "type": "item",
           "settings": {
-            "ban_img": "shopify://shop_images/video-banner.png",
-            "ban_link": "shopify://collections/all",
-            "heading_line1": "Elegant",
-            "heading_line2": "Accessories",
-            "heading_accent": "for You",
-            "text": "Jewelry is like the perfect spice - it always complements what's already there.",
-            "button_text": "Shop Now"
+            "code": "LUXURY WEDDING JEWELRY"
           }
         },
-        "banner_slider_8Adxa9": {
-          "type": "banner_slider",
+        "template--21125500633368__42c9748e-ce08-4187-92e7-c4e3c162c249-item-1": {
+          "type": "item",
           "settings": {
-            "ban_img": "shopify://shop_images/gbl-hero.png",
-            "ban_link": "shopify://collections/all",
-            "heading_line1": "Shine",
-            "heading_line2": "Bright Like",
-            "heading_accent": "a Diamond",
-            "text": "If there was a choice on spending a lot of money on accessories or dresses, I always chose accessories. I think jewelry can change an outfit more than anything else",
-            "button_text": "Shop Now"
+            "code": "GOLD-PLATED"
+          }
+        },
+        "item_y7y7Dh": {
+          "type": "item",
+          "settings": {
+            "code": "SHOP WEDDING JEWELRY"
           }
         }
       },
       "block_order": [
-        "banner_slider_GX7in3",
-        "banner_slider_6rYJHW",
-        "banner_slider_8Adxa9"
+        "item_PcB4iG",
+        "867ea529-0999-4c33-b6fc-903cd11ddf0a",
+        "template--21125500633368__42c9748e-ce08-4187-92e7-c4e3c162c249-item-1",
+        "item_y7y7Dh"
+      ],
+      "custom_css": [
+        ".textscroll-item {letter-spacing: 0.15rem;}"
       ],
       "settings": {
-        "auto_rotate": true,
-        "slide_interval": 5,
-        "transition_effect": "fade"
+        "animation": "fade",
+        "size_text": "p",
+        "text_style": "solid",
+        "size_icon": 52,
+        "speed": 10,
+        "scroll_type": "from-right",
+        "background": "#f0f0f0",
+        "gradient_bg": "",
+        "text": "#042436",
+        "paddingsection": "30px 0px 30px 0px",
+        "paddingmobile": "16px 0px 16px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "gbl_jewelry_categories_fkYjxE": {
-      "type": "gbl-jewelry-categories",
+    "92f0a295-b138-41fa-9620-bf11ee35918a": {
+      "type": "featured-collections-3",
       "blocks": {
-        "category_j9NKeG": {
-          "type": "category",
+        "template--21581222871313__92f0a295-b138-41fa-9620-bf11ee35918a-collection-1": {
+          "type": "collection",
           "settings": {
-            "title": "RINGS",
-            "link": "/collections/rings",
-            "icon": "rings"
+            "collection": "rings",
+            "enable_customize": true,
+            "text_customize": "Rings",
+            "url_customize": ""
           }
         },
-        "category_wUEzhK": {
-          "type": "category",
+        "template--21581222871313__92f0a295-b138-41fa-9620-bf11ee35918a-collection-2": {
+          "type": "collection",
           "settings": {
-            "title": "BRACELET",
-            "link": "/collections/bracelets",
-            "icon": "bracelet"
+            "collection": "bracelets",
+            "enable_customize": true,
+            "text_customize": "Bracelet",
+            "url_customize": ""
           }
         },
-        "category_cqzdW6": {
-          "type": "category",
+        "template--21581222871313__92f0a295-b138-41fa-9620-bf11ee35918a-collection-3": {
+          "type": "collection",
           "settings": {
-            "title": "EARRINGS",
-            "link": "/collections/earrings",
-            "icon": "earrings"
+            "collection": "earrings",
+            "enable_customize": true,
+            "text_customize": "Earrings",
+            "url_customize": ""
           }
         },
-        "category_APTFcT": {
-          "type": "category",
+        "4b6dd5f0-51d1-468a-a89d-230ac96834c7": {
+          "type": "collection",
           "settings": {
-            "title": "NECKLACE",
-            "link": "/collections/necklace",
-            "icon": "necklace"
-          }
-        },
-        "category_Lmx69f": {
-          "type": "category",
-          "settings": {
-            "title": "CHAIN",
-            "link": "/collections/chain",
-            "icon": "chain"
+            "collection": "necklace",
+            "enable_customize": true,
+            "text_customize": "Necklace",
+            "url_customize": ""
           }
         }
       },
       "block_order": [
-        "category_j9NKeG",
-        "category_wUEzhK",
-        "category_cqzdW6",
-        "category_APTFcT",
-        "category_Lmx69f"
+        "template--21581222871313__92f0a295-b138-41fa-9620-bf11ee35918a-collection-1",
+        "template--21581222871313__92f0a295-b138-41fa-9620-bf11ee35918a-collection-2",
+        "template--21581222871313__92f0a295-b138-41fa-9620-bf11ee35918a-collection-3",
+        "4b6dd5f0-51d1-468a-a89d-230ac96834c7"
+      ],
+      "custom_css": [
+        ".title-collection {font-style: italic;}"
       ],
       "settings": {
-        "icon_background": "#f7f4ef",
-        "active_background": "#f7f4ef",
-        "icon_color": "#d4af37",
-        "text_color": "#272727",
-        "icon_border_color": "#d4af37",
-        "border_radius": 4,
-        "show_border": true
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "",
+        "title": "",
+        "des": "",
+        "align-heading": "left",
+        "stylecollection": "name",
+        "size_image_col": "auto",
+        "enable_count_item": false,
+        "enable_gradient": false,
+        "color": "#000000",
+        "bg_overlay": "#000000",
+        "opacity_overlay": 0,
+        "size_title": "h6",
+        "style_btn": "btn-theme",
+        "button_link": "",
+        "button": "",
+        "perviewDesktop": 4,
+        "spaceBetween": 30,
+        "nowrap": true,
+        "arrows": false,
+        "scrollbar": false,
+        "paddingsection": "50px 0px 50px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "gbl_featured_products_V4gKBn": {
-      "type": "gbl-featured-products",
-      "settings": {
-        "title": "Our New Arrival",
-        "products_collection": "best-selling",
-        "products_count": 6,
-        "filter_collections": [
-          "anklets",
-          "bangles",
-          "black-friday-bundle-deals",
-          "bracelets",
-          "earrings"
-        ]
-      }
-    },
-    "gbl_product_spotlight_AdBkVn": {
-      "type": "gbl-product-spotlight",
-      "settings": {
-        "image": "shopify://shop_images/spotlight-image.png",
-        "product_title": "Pavé Diamond Slim Signet",
-        "product_tag": "24k Gold",
-        "heading": "Never Let Anyone Dull Your Sparkle",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
-        "button_text": "View All Collection",
-        "button_link": ""
-      }
-    },
-    "gbl_bestsellers_FNCmrG": {
-      "type": "gbl-bestsellers",
-      "settings": {
-        "title": "Best Seller",
-        "collection": "best-selling",
-        "products_count": 3,
-        "show_color_options": true
-      }
-    },
-    "gbl_service_highlights_WtDcXy": {
-      "type": "gbl-service-highlights",
+    "product_tab_KnDJEt": {
+      "type": "product-tab",
       "blocks": {
-        "service_3AFncf": {
-          "type": "service",
+        "collection_kCgRHN": {
+          "type": "collection",
           "settings": {
-            "icon": "shipping",
-            "title": "Fast Shipping",
-            "description": "Instant delivery to your location"
+            "title": "Rings",
+            "collection": "rings"
           }
         },
-        "service_wGdxke": {
-          "type": "service",
+        "collection_YhyNbW": {
+          "type": "collection",
           "settings": {
-            "icon": "money",
-            "title": "Money Guarantee",
-            "description": "Within 30 days for an exchange"
+            "title": "Necklace",
+            "collection": "necklace"
           }
         },
-        "service_RdwJqf": {
-          "type": "service",
+        "collection_WA6YcE": {
+          "type": "collection",
           "settings": {
-            "icon": "support",
-            "title": "Online Support",
-            "description": "24 hours a day, 7 days a week"
-          }
-        },
-        "service_CAYAUD": {
-          "type": "service",
-          "settings": {
-            "icon": "payment",
-            "title": "Flexible Payment",
-            "description": "Pay with multiple Credit Cards"
+            "title": "Earrings",
+            "collection": "earrings"
           }
         }
       },
       "block_order": [
-        "service_3AFncf",
-        "service_wGdxke",
-        "service_RdwJqf",
-        "service_CAYAUD"
-      ],
-      "settings": {
-        "background_color": "#000000",
-        "icon_color": "#d4af37",
-        "title_color": "#d4af37",
-        "text_color": "#ffffff"
-      }
-    },
-    "gbl_testimonial_VGTGfB": {
-      "type": "gbl-testimonial",
-      "settings": {
-        "star_rating": 5,
-        "quote": "I really think that American gentlemen are the best after all, because kissing your hand may make you feel very good, but a diamond and a sapphire bracelet lasts forever",
-        "author_name": "Michal Brink",
-        "author_location": "Royal Ln. Mesa, New Jersey",
-        "background_color": "#f8f6f1",
-        "text_color": "#333333",
-        "star_color": "#000000"
-      }
-    },
-    "1730568178bbb7af4c": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_reviews_featured_reviews_carousel_eM8FPx": {
-          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "klaviyo_reviews_featured_reviews_carousel_eM8FPx"
+        "collection_kCgRHN",
+        "collection_YhyNbW",
+        "collection_WA6YcE"
       ],
       "disabled": true,
       "settings": {
-        "include_margins": false
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "",
+        "title": "New Arrival",
+        "des": "",
+        "align-heading": "center",
+        "style_tab": "line",
+        "enable_carousel": true,
+        "arrows": true,
+        "draggable": true,
+        "dots": false,
+        "infinite": false,
+        "rows": "1",
+        "spaceBetween": 30,
+        "limit": 10,
+        "show": 5,
+        "buttonall": "Shop all",
+        "buttonall_link": "shopify://collections/all",
+        "style_btn": "btn-outline",
+        "paddingsection": "60px 0px 60px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "173056829987e9d4ab": {
-      "type": "apps",
+    "product_list_czMgWQ": {
+      "type": "product-list",
       "settings": {
-        "include_margins": true
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "",
+        "title": "Best Selling",
+        "des": "",
+        "align-heading": "center",
+        "collection": "best-selling",
+        "arrows": true,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "rows": "1",
+        "limit": 10,
+        "show": 5,
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
       }
     },
-    "1731735866bf83c57d": {
-      "type": "apps",
+    "16485444103c52f5e9": {
+      "type": "service",
       "blocks": {
-        "instafeed_app_block_ELx3VJ": {
-          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+        "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-0": {
+          "type": "service",
           "settings": {
-            "title": "",
-            "title_color": "",
-            "alignment": "center",
-            "background_color": "",
-            "feed_id": "",
-            "html_area": ""
+            "bgblock": "rgba(0,0,0,0)",
+            "title": "FOR ALL SKIN TYPES",
+            "description": "",
+            "type_icon": "img",
+            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 64 64\"><path d=\"M32 54.52L10 41.95v-19.9L32 9.48l22 12.57v19.9L32 54.52z\"></path><path d=\"M32 54.52v-19.9l22-12.57M32 34.62L10 22.05M41.7 15.02L21 28.33v8.38\"></path></svg>",
+            "link_block": "",
+            "button": "",
+            "style_btn": "btn-underline"
+          }
+        },
+        "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-1": {
+          "type": "service",
+          "settings": {
+            "bgblock": "rgba(0,0,0,0)",
+            "title": "NOT TESTED ON ANIMALS",
+            "description": "",
+            "type_icon": "img",
+            "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 64 64\"><path d=\"M16.5 43.22H6.88V16.5h33.14v26.72H23.94M45.42 43.22h-5.4V30.4h17.1v12.82h-4.23M57.12 30.4l-6.41-8.56H40.02\"></path><circle cx=\"20.24\" cy=\"43.76\" r=\"3.74\"></circle><path d=\"M45.42 43.23a3.82 3.82 0 1 1 0 .37v-.37\"></path></svg>",
+            "link_block": "",
+            "button": "",
+            "style_btn": "btn-underline"
+          }
+        },
+        "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-2": {
+          "type": "service",
+          "settings": {
+            "bgblock": "rgba(0,0,0,0)",
+            "title": "HYPOALLERGENIC",
+            "description": "",
+            "type_icon": "img",
+            "icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.0039 10.2464C14.9149 10.2464 14.8326 10.2005 14.7855 10.1252L11.8344 5.3944C11.785 5.31515 11.7824 5.21532 11.8278 5.13339C11.8731 5.05167 11.9594 5.00082 12.0528 5.00082L17.9181 5C18.0113 5 18.0971 5.05043 18.1426 5.13195C18.1883 5.21346 18.1861 5.31289 18.1373 5.39235L15.2229 10.1242C15.1762 10.1999 15.0936 10.2464 15.0045 10.2466L15.0039 10.2464ZM12.5166 5.51565L15.0024 9.50065L17.4574 5.51483L12.5166 5.51565Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M9.1197 10.2464C9.03098 10.2464 8.94884 10.2007 8.90171 10.1258L5.93524 5.39502C5.88542 5.31577 5.88274 5.21573 5.92803 5.1336C5.97332 5.05187 6.05957 5.00082 6.15323 5.00082L12.0528 5C12.1461 5 12.2321 5.05064 12.2776 5.13215C12.3231 5.21367 12.3208 5.31371 12.2716 5.39296L9.33831 10.1246C9.29138 10.2001 9.20904 10.2462 9.12011 10.2464H9.1197ZM6.61803 5.51565L9.11826 9.50292L11.5905 5.51483L6.61803 5.51565Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M9.12361 10.2464C9.12258 10.2464 9.12093 10.2466 9.11949 10.2464H3.26271C3.16967 10.2464 3.08383 10.1962 3.03834 10.1149C2.99264 10.0336 2.99449 9.93438 3.04307 9.85492L5.93359 5.1233C5.98011 5.04714 6.06245 5.00062 6.15179 5C6.1522 5 6.15281 5 6.15323 5C6.24195 5 6.32408 5.0457 6.37122 5.12063L9.31669 9.81828C9.35683 9.86377 9.38112 9.92347 9.38112 9.98893C9.38092 10.1314 9.26585 10.2464 9.12361 10.2464ZM3.72134 9.73182H8.65469L6.1559 5.7464L3.72134 9.73182Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M15.0077 10.2464C15.0067 10.2464 15.0053 10.2466 15.0036 10.2464H9.11968C9.02643 10.2464 8.94039 10.1958 8.8949 10.1143C8.8494 10.0328 8.85167 9.93273 8.90087 9.85348L11.834 5.12186C11.8809 5.04632 11.9635 5.00021 12.0524 5H12.0528C12.1417 5 12.2241 5.0459 12.2712 5.12124L15.201 9.81869C15.241 9.86418 15.2653 9.92367 15.2653 9.98893C15.2651 10.1314 15.15 10.2464 15.0077 10.2464ZM9.58181 9.73182H14.5401L12.0534 5.74476L9.58181 9.73182Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M20.8129 10.2464C20.8119 10.2464 20.8102 10.2466 20.8088 10.2464H15.0039C14.9106 10.2464 14.8248 10.196 14.7791 10.1145C14.7336 10.033 14.7359 9.93355 14.7847 9.8541L17.6988 5.12248C17.7458 5.04632 17.8287 5 17.9179 5H17.9183C18.0078 5.00021 18.0908 5.04693 18.1373 5.1233L21.0072 9.82054C21.0463 9.86562 21.07 9.9245 21.07 9.98893C21.0702 10.1314 20.9551 10.2464 20.8129 10.2464ZM15.4646 9.73182H20.3502L17.9172 5.7497L15.4646 9.73182Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M12.0856 19.3742C12.0158 19.3742 11.9491 19.3458 11.9007 19.2958L3.07233 10.1681C3.00049 10.094 2.98011 9.98362 3.02046 9.88873C3.0606 9.79363 3.15385 9.73187 3.25718 9.73187H20.809C20.9119 9.73187 21.005 9.79342 21.0455 9.88811C21.0859 9.9828 21.0661 10.0925 20.9949 10.1668L12.2715 19.2945C12.2233 19.3452 12.1562 19.374 12.0864 19.3742H12.0856ZM3.86402 10.2465L12.0843 18.7455L20.2071 10.2465H3.86402Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M12.0856 19.3741C11.9771 19.3741 11.876 19.305 11.841 19.1965L8.87496 10.0688C8.83091 9.93356 8.90501 9.78843 9.04005 9.74459C9.17591 9.70054 9.32062 9.77464 9.36426 9.90968L12.3301 19.0374C12.3742 19.1726 12.3001 19.3177 12.165 19.3616C12.1387 19.3702 12.1119 19.3741 12.0856 19.3741Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n<path d=\"M12.0942 19.3741C12.0685 19.3741 12.0421 19.3702 12.016 19.362C11.8807 19.3188 11.8058 19.1741 11.8488 19.0386L14.7585 9.9109C14.8017 9.77587 14.945 9.70073 15.0819 9.74375C15.2171 9.78698 15.292 9.93169 15.249 10.0671L12.3393 19.195C12.3044 19.3044 12.2033 19.3741 12.0942 19.3741Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.1\"></path>\n</svg>",
+            "link_block": "",
+            "button": "",
+            "style_btn": "btn-underline"
+          }
+        },
+        "4273663e-a3ea-49a8-a7c1-c872309fc99c": {
+          "type": "service",
+          "settings": {
+            "bgblock": "rgba(0,0,0,0)",
+            "title": "FREE FROM PARABENS",
+            "description": "",
+            "type_icon": "img",
+            "icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M13.2688 8.07846L15.103 6.33556C15.1932 6.24541 15.2232 6.09516 15.1631 5.97496L13.5093 3.15025C13.4492 3.0601 13.359 3 13.2387 3H9.96128C9.841 3 9.7508 3.0601 9.69066 3.15025L8.0369 5.97496C7.97677 6.09516 7.97677 6.24541 8.09704 6.33556L9.93121 8.07846C7.10478 8.82972 5 11.384 5 14.4491C5.03007 18.0551 7.97677 21 11.615 21C15.2533 21 18.2 18.0551 18.2 14.419C18.2 11.384 16.0952 8.79967 13.2688 8.07846ZM8.72847 6.06511L10.1718 3.57095H13.0884L14.5317 6.06511L12.5772 7.92821C12.2765 7.89816 11.9458 7.86811 11.6451 7.86811C11.3144 7.86811 11.0137 7.89816 10.713 7.92821L8.72847 6.06511ZM11.615 20.399C8.30752 20.399 5.63144 17.7245 5.63144 14.419C5.63144 11.1135 8.30752 8.46911 11.615 8.46911C14.9226 8.46911 17.5986 11.1436 17.5986 14.4491C17.5986 17.7546 14.9226 20.399 11.615 20.399Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"0.2\"></path>\n</svg>",
+            "link_block": "",
+            "button": "",
+            "style_btn": "btn-underline"
           }
         }
       },
       "block_order": [
-        "instafeed_app_block_ELx3VJ"
+        "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-0",
+        "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-1",
+        "template--14684877652053__c5690cdb-c04d-45fd-9c6c-cfee011363ca-166585292003960893-2",
+        "4273663e-a3ea-49a8-a7c1-c872309fc99c"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h5 {font-family: var(--g-font-2); letter-spacing: 0.05rem;}"
       ],
       "settings": {
-        "include_margins": true
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "rgba(0,0,0,0)",
+        "title_top": "What we Believe",
+        "title": "IT’S ABOUT YOUR SKIN, BUT IT’S <br> ALSO ABOUT YOU.",
+        "des": "While we believe in the power of science and the role it has in determining how one’s skin looks and feels, we <br> also acknowledge that skincare is as much an emotional journey as it is a physical one.",
+        "align-heading": "center",
+        "paddingbox": "0px 0px 0px 0px",
+        "iconcolor": "#042436",
+        "titlecolor": "#042436",
+        "subcolor": "#042436",
+        "size": 100,
+        "service_heading": "h6",
+        "layout": "style-2",
+        "enable_carousel": false,
+        "arrows": false,
+        "draggable": true,
+        "dots": true,
+        "infinite": false,
+        "paddingsection": "80px 0px 50px 0px",
+        "paddingmobile": "30px 0px 10px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "96713abe-b110-4f66-82c4-233305af1faf": {
+      "type": "parallax-banner",
+      "blocks": {
+        "template--21581222871313__96713abe-b110-4f66-82c4-233305af1faf-sub_title-1": {
+          "type": "sub_title",
+          "settings": {
+            "subtitle": "Holiday Gift Guides"
+          }
+        },
+        "template--21581222871313__96713abe-b110-4f66-82c4-233305af1faf-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "An Unforgettable  <br> Proposal",
+            "size_text": "h3"
+          }
+        },
+        "template--21581222871313__96713abe-b110-4f66-82c4-233305af1faf-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "subtext": "Need help choosing a gift?"
+          }
+        },
+        "e6ac51bd-42fd-4eeb-a904-374cc1fcfa72": {
+          "type": "button",
+          "settings": {
+            "button": "Shop gift",
+            "link": "#",
+            "style_btn": "btn-theme"
+          }
+        }
+      },
+      "block_order": [
+        "template--21581222871313__96713abe-b110-4f66-82c4-233305af1faf-sub_title-1",
+        "template--21581222871313__96713abe-b110-4f66-82c4-233305af1faf-heading-1",
+        "template--21581222871313__96713abe-b110-4f66-82c4-233305af1faf-paragraph-1",
+        "e6ac51bd-42fd-4eeb-a904-374cc1fcfa72"
+      ],
+      "disabled": true,
+      "settings": {
+        "animation": "fade",
+        "setwidth": "full",
+        "bgsection": "#ffffff",
+        "parrallax_enable": true,
+        "height_section": "550",
+        "height_section_mobile": "450",
+        "align": "left",
+        "position_text": "mid-left",
+        "bg_box": "#ffffff",
+        "opacity_bgbox": 1,
+        "title_color": "rgba(0,0,0,0)",
+        "bg_overlay": "#000000",
+        "gradient_bg": "",
+        "opacity_bg_overlay": 0,
+        "paddingsection": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px"
+      }
+    },
+    "48a9fffb-7b1f-4bc5-9e0b-4f19556846d2": {
+      "type": "featured-collections-3",
+      "blocks": {
+        "template--21109129117976__48a9fffb-7b1f-4bc5-9e0b-4f19556846d2-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "round",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "template--21109129117976__48a9fffb-7b1f-4bc5-9e0b-4f19556846d2-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "oval",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "template--21109129117976__48a9fffb-7b1f-4bc5-9e0b-4f19556846d2-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "cushion",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "512c6834-213c-4ccf-a66e-e226ca3b166e": {
+          "type": "collection",
+          "settings": {
+            "collection": "emerald",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "012b04ac-f446-483f-a6aa-c59e3444912d": {
+          "type": "collection",
+          "settings": {
+            "collection": "princess",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "bcd6b727-9c9f-4c33-9b79-0d4ca6070131": {
+          "type": "collection",
+          "settings": {
+            "collection": "shorts",
+            "enable_customize": true,
+            "text_customize": "Pear",
+            "url_customize": "shopify://products/facet-1ct-pear-necklace"
+          }
+        },
+        "d2a18a3e-89a8-4976-8c1b-a5ff9605b0e8": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "enable_customize": true,
+            "text_customize": "Radiant",
+            "url_customize": ""
+          }
+        },
+        "2dd2041d-5ea2-42f4-a4f5-f13d74e2c93c": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "enable_customize": true,
+            "text_customize": "Marquise",
+            "url_customize": "shopify://products/dujour-marquise-diamond-necklace"
+          }
+        },
+        "9e9e2645-2af1-43a6-bcc5-fc0d8787affa": {
+          "type": "collection",
+          "settings": {
+            "collection": "asscher",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        },
+        "6e7b0c1b-262a-4eb2-b708-970080de348e": {
+          "type": "collection",
+          "settings": {
+            "collection": "hearts",
+            "enable_customize": false,
+            "text_customize": "Shop now",
+            "url_customize": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21109129117976__48a9fffb-7b1f-4bc5-9e0b-4f19556846d2-collection-3",
+        "template--21109129117976__48a9fffb-7b1f-4bc5-9e0b-4f19556846d2-collection-2",
+        "template--21109129117976__48a9fffb-7b1f-4bc5-9e0b-4f19556846d2-collection-1",
+        "512c6834-213c-4ccf-a66e-e226ca3b166e",
+        "012b04ac-f446-483f-a6aa-c59e3444912d",
+        "bcd6b727-9c9f-4c33-9b79-0d4ca6070131",
+        "d2a18a3e-89a8-4976-8c1b-a5ff9605b0e8",
+        "2dd2041d-5ea2-42f4-a4f5-f13d74e2c93c",
+        "9e9e2645-2af1-43a6-bcc5-fc0d8787affa",
+        "6e7b0c1b-262a-4eb2-b708-970080de348e"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h4 {font-style: italic;}"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "Explore Stone",
+        "title": "<i>Shop Stone by Shape</i>",
+        "des": "",
+        "align-heading": "left",
+        "stylecollection": "name",
+        "size_image_col": "auto",
+        "enable_count_item": false,
+        "enable_gradient": false,
+        "color": "#000000",
+        "bg_overlay": "#222222",
+        "opacity_overlay": 0,
+        "size_title": "h5",
+        "style_btn": "btn-theme",
+        "button_link": "",
+        "button": "",
+        "perviewDesktop": 10,
+        "spaceBetween": 55,
+        "nowrap": true,
+        "arrows": false,
+        "scrollbar": true,
+        "paddingsection": "60px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "705146a2-5b6c-4449-8de7-345077567130": {
+      "type": "grid-banner",
+      "blocks": {
+        "template--21581222871313__705146a2-5b6c-4449-8de7-345077567130-banner-1": {
+          "type": "banner",
+          "settings": {
+            "width": "6",
+            "enable_height_banner": true,
+            "promo_banner_height": 800,
+            "promo_banner_height_mobile": 300,
+            "image": "shopify://shop_images/2EE77725-A84C-4BC1-8DF1-26D4C30CD022.jpg",
+            "enable_video": true,
+            "video_hosted": "",
+            "subtitle": "",
+            "title": "Moving Forward.",
+            "size_text": "h3",
+            "space_heading": "mb-1",
+            "description": "Each of our formulations is developed with potent active <br> ingredients that help your skin make progress.",
+            "bg_color": "#ffffff",
+            "colordef": "#000000",
+            "opacity_bg": 1,
+            "style_btn": "btn-underline",
+            "button_text": "Shop now",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "left",
+            "text_align": "left"
+          }
+        },
+        "banner_GdPA9w": {
+          "type": "banner",
+          "settings": {
+            "width": "6",
+            "enable_height_banner": true,
+            "promo_banner_height": 800,
+            "promo_banner_height_mobile": 300,
+            "image": "shopify://shop_images/84A574DF-D660-4194-978D-63F1E0CED0EA.jpg",
+            "enable_video": false,
+            "video_hosted": "",
+            "subtitle": "",
+            "title": "a good skin day.",
+            "size_text": "h2",
+            "space_heading": "mb-2",
+            "description": "Each of our formulations is developed with potent active <br> ingredients that help your skin make progress.",
+            "bg_color": "#ffffff",
+            "colordef": "#000000",
+            "opacity_bg": 1,
+            "style_btn": "btn-underline",
+            "button_text": "SHOP NOW",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--21581222871313__705146a2-5b6c-4449-8de7-345077567130-banner-1",
+        "banner_GdPA9w"
+      ],
+      "disabled": true,
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "full",
+        "bgsection": "#ffffff",
+        "title_top": "",
+        "title": "",
+        "des": "",
+        "align-heading": "center",
+        "no_gutter": false,
+        "gutter_padding": 4,
+        "show_overlay": true,
+        "gradient_overlay": true,
+        "bg_overlay": "#000000",
+        "opacity_overlay": 0.1,
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "c92b6d28-25d1-477b-920a-d657bf443761": {
+      "type": "product-tab",
+      "blocks": {
+        "template--21581222871313__c92b6d28-25d1-477b-920a-d657bf443761-collection-1": {
+          "type": "collection",
+          "settings": {
+            "title": "Bracelet Stacks",
+            "collection": "black-friday-bundle-deals"
+          }
+        },
+        "template--21581222871313__c92b6d28-25d1-477b-920a-d657bf443761-collection-3": {
+          "type": "collection",
+          "settings": {
+            "title": "Rings",
+            "collection": "rings"
+          }
+        },
+        "template--21581222871313__c92b6d28-25d1-477b-920a-d657bf443761-collection-2": {
+          "type": "collection",
+          "settings": {
+            "title": "Clothing",
+            "collection": "clothings"
+          }
+        }
+      },
+      "block_order": [
+        "template--21581222871313__c92b6d28-25d1-477b-920a-d657bf443761-collection-1",
+        "template--21581222871313__c92b6d28-25d1-477b-920a-d657bf443761-collection-3",
+        "template--21581222871313__c92b6d28-25d1-477b-920a-d657bf443761-collection-2"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "",
+        "title": "Featured Products",
+        "des": "",
+        "align-heading": "center",
+        "style_tab": "line",
+        "enable_carousel": true,
+        "arrows": true,
+        "draggable": true,
+        "dots": false,
+        "infinite": false,
+        "rows": "1",
+        "spaceBetween": 30,
+        "limit": 10,
+        "show": 5,
+        "buttonall": "Shop all",
+        "buttonall_link": "shopify://collections/bracelets",
+        "style_btn": "btn-outline",
+        "paddingsection": "60px 0px 60px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "9614dbf0-b77a-4edf-b0a3-08bea8f76dee": {
+      "type": "parallax-banner",
+      "blocks": {
+        "2bd765a4-8cf8-41da-b5f3-5d8d6be3804c": {
+          "type": "sub_title",
+          "settings": {
+            "subtitle": "Stackable Bracelets"
+          }
+        },
+        "cc4b7ac8-2a31-4dee-8d73-454bc4a7551f": {
+          "type": "heading",
+          "settings": {
+            "title": "Black Friday: Buy 3 non-tarnish gold-plated bracelets, get 1 free!",
+            "size_text": "h2"
+          }
+        },
+        "9a0b6fce-7764-43e9-bb7e-acecef5d6cca": {
+          "type": "paragraph",
+          "settings": {
+            "subtext": "Our gold-plated bracelets are carefully crafted with quality materials for lasting results."
+          }
+        },
+        "c9bcde7b-49e7-4d6e-8b45-5b02a0f4d764": {
+          "type": "button",
+          "settings": {
+            "button": "SHOP NOW",
+            "link": "shopify://products/stackable-bracelet-2",
+            "style_btn": "btn-theme"
+          }
+        }
+      },
+      "block_order": [
+        "2bd765a4-8cf8-41da-b5f3-5d8d6be3804c",
+        "cc4b7ac8-2a31-4dee-8d73-454bc4a7551f",
+        "9a0b6fce-7764-43e9-bb7e-acecef5d6cca",
+        "c9bcde7b-49e7-4d6e-8b45-5b02a0f4d764"
+      ],
+      "settings": {
+        "animation": "fade",
+        "setwidth": "full",
+        "bgsection": "#ffffff",
+        "parrallax_enable": true,
+        "image": "shopify://shop_images/IMG_8046.jpg",
+        "height_section": "550",
+        "height_section_mobile": "450",
+        "align": "left",
+        "position_text": "mid-left",
+        "bg_box": "#ffffff",
+        "opacity_bgbox": 1,
+        "title_color": "#000000",
+        "bg_overlay": "#000000",
+        "gradient_bg": "",
+        "opacity_bg_overlay": 0,
+        "paddingsection": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px"
+      }
+    },
+    "product_list_rMPrEt": {
+      "type": "product-list",
+      "settings": {
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "",
+        "title": "Elegant, Modest <br>and Timeless clothings",
+        "des": "",
+        "align-heading": "left",
+        "collection": "clothings",
+        "arrows": true,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "rows": "1",
+        "limit": 10,
+        "show": 5,
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "80px 0px 40px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "662cf23c-2a28-41c4-9bd8-b6517c99ba49": {
+      "type": "image-content-6",
+      "blocks": {
+        "template--19541121335616__662cf23c-2a28-41c4-9bd8-b6517c99ba49-1687424839f6967066-1": {
+          "type": "text_block",
+          "settings": {
+            "bgtext": "rgba(0,0,0,0)",
+            "subtitle": "",
+            "title": "Heart Choker Set",
+            "size_text": "h2",
+            "text": "",
+            "answer_content": "<p>Complete your look with our charming set of choker necklace, earrings, bracelet and ring. Perfect for any occasion, these pieces add a touch of elegance to your outfit. Designed with quality materials, our set radiates a stylish vibe.</p>",
+            "button": "Shop Now",
+            "link": "shopify://products/heart-choker-set",
+            "style_btn": "btn-outline",
+            "align": "left",
+            "enable_padding_left": false,
+            "enable_padding_right": true
+          }
+        },
+        "template--19541121335616__662cf23c-2a28-41c4-9bd8-b6517c99ba49-1687424839f6967066-0": {
+          "type": "image_block",
+          "settings": {
+            "style_content": "default",
+            "w_image": 40,
+            "pos_image": 88,
+            "e_image": "right",
+            "image": "shopify://shop_images/heart-choker.webp",
+            "image2": "shopify://shop_images/heart-choker.webp",
+            "enable_video": false,
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "text_circle": "Fashion2 style store",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19541121335616__662cf23c-2a28-41c4-9bd8-b6517c99ba49-1687424839f6967066-1",
+        "template--19541121335616__662cf23c-2a28-41c4-9bd8-b6517c99ba49-1687424839f6967066-0"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#ede9a0",
+        "size": "50-50",
+        "enable_padding": false,
+        "align_center": true,
+        "paddingsection": "80px 0px 80px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "811a6110-0ea8-4aca-b4ad-843c1574e2f6": {
+      "type": "quotes-special",
+      "blocks": {
+        "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-3": {
+          "type": "quote",
+          "settings": {
+            "title": "AMAZING",
+            "quote": "The ring is AMAZING. It's an eye catcher for everyone. Extremely well made and we love it",
+            "rate": 5,
+            "author": "— Joseph M.",
+            "info": "",
+            "avatar": "shopify://shop_images/GBL_LOGO.png",
+            "product_item": "facet-1ct-pear-necklace",
+            "product_style": "dark"
+          }
+        },
+        "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-1": {
+          "type": "quote",
+          "settings": {
+            "title": "Fantastic !",
+            "quote": "\" Thank you for giving us everything we were looking for to make the absolute perfect ring! \"",
+            "rate": 5,
+            "author": "— Scott O.",
+            "info": "",
+            "product_item": "earrings-1carat-outlet-bezel-solitaire-studs-white",
+            "product_style": "dark"
+          }
+        },
+        "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-2": {
+          "type": "quote",
+          "settings": {
+            "title": "Absolutely Perfect !",
+            "quote": "Helpful, informative, and affordable, Clean Origin is the place to go for diamond rings.",
+            "rate": 5,
+            "author": "— Michael C.",
+            "info": "",
+            "product_item": "rings-1-carat-round-brilliant-constellation-yellow-gold-ring-white",
+            "product_style": "dark"
+          }
+        }
+      },
+      "block_order": [
+        "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-3",
+        "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-1",
+        "template--21664100811025__811a6110-0ea8-4aca-b4ad-843c1574e2f6-quote-2"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#ffffff",
+        "title_top": "",
+        "title": "",
+        "des": "",
+        "align-heading": "center",
+        "color_rate": "#f1f1f1",
+        "color_rated": "#14344a",
+        "image_size": "square",
+        "size_text": "h4",
+        "arrows": true,
+        "draggable": true,
+        "dots": false,
+        "infinite": true,
+        "paddingsection": "80px 0px 80px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "e2e754bf-d47e-4ef9-8fd7-1ced7e029d74": {
+      "type": "quotes",
+      "blocks": {
+        "template--21109129117976__e2e754bf-d47e-4ef9-8fd7-1ced7e029d74-quote-1": {
+          "type": "quote",
+          "settings": {
+            "title": "",
+            "author": "Anna M.",
+            "info": "from Vogue",
+            "rate": 5,
+            "quote": "Embodying the feminine silhouettes, the activewear evokes an effortless elegance. Each design is a carefully considered piece, whether being squat-proof, booty-shaping or lingerie inspired"
+          }
+        },
+        "template--21109129117976__e2e754bf-d47e-4ef9-8fd7-1ced7e029d74-quote-2": {
+          "type": "quote",
+          "settings": {
+            "title": "",
+            "author": "Eleanor S.",
+            "info": "from heath",
+            "rate": 5,
+            "quote": "At the editorial office we just have to say, WOW!  The materials feels & fits amazingly. It is by far the best work out outfit, the textiles are very good, lasting and resistant. Very sexy!"
+          }
+        },
+        "template--21109129117976__e2e754bf-d47e-4ef9-8fd7-1ced7e029d74-quote-3": {
+          "type": "quote",
+          "settings": {
+            "title": "",
+            "author": "Hanler O.",
+            "info": "from Elle",
+            "rate": 5,
+            "quote": "This is a beautiful sports bra. Absolutely love the fit of this bra , it is so flattering and well supporting. I wear it as a bikini bra and always get asked where I got it from."
+          }
+        }
+      },
+      "block_order": [
+        "template--21109129117976__e2e754bf-d47e-4ef9-8fd7-1ced7e029d74-quote-1",
+        "template--21109129117976__e2e754bf-d47e-4ef9-8fd7-1ced7e029d74-quote-2",
+        "template--21109129117976__e2e754bf-d47e-4ef9-8fd7-1ced7e029d74-quote-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#344a53",
+        "title_color": "#ffffff",
+        "title_top": "",
+        "title": "",
+        "des": "",
+        "align-heading": "center",
+        "aligntext": "text-center",
+        "style": "style-1",
+        "color_rate": "#f1f1f1",
+        "color_rated": "#fab74a",
+        "size_text": "h4",
+        "bg_item": "rgba(0,0,0,0)",
+        "widthcolumn": 80,
+        "enable_padding_inner": true,
+        "show": 1,
+        "arrows": false,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "paddingsection": "80px 0px 80px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "3fb03ff7-25ae-4f7b-8179-3e29c80906fd": {
+      "type": "line",
+      "settings": {
+        "animation": "",
+        "paddingsection": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "bgsection": "#ffffff",
+        "setwidth": "container",
+        "bgborder": "#000000",
+        "wborder": "1px"
+      }
+    },
+    "5e6d27a3-1163-46d3-a128-345487900584": {
+      "type": "faq-accordion",
+      "blocks": {
+        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-0": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "What type of jewellery do you sell?",
+            "faq_des": "<p>We specialize in high-quality, non-tarnish, and hypoallergenic gold-plated jewellery.</p><p>Our pieces are designed for everyday wear, ensuring durability and elegance without</p><p>irritation.</p>"
+          }
+        },
+        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-1": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Will the jewellery tarnish or fade over time?",
+            "faq_des": "<p>No, our jewellery is crafted with high-quality gold plating that is resistant to tarnishing</p><p>and fading. With proper care, your pieces will maintain their shine for a long time.</p>"
+          }
+        },
+        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-2": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Is your jewellery safe for sensitive skin?",
+            "faq_des": "<p>Yes! Our jewellery is hypoallergenic and free from harsh metals like nickel and lead,</p><p>making it safe for people with sensitive skin.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-0",
+        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-1",
+        "template--19541121335616__5e6d27a3-1163-46d3-a128-345487900584-1687514909b5a1268d-2"
+      ],
+      "custom_css": [
+        ".faq-heading {font-style: italic;}"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#f7f7f7",
+        "e_size": "contain",
+        "e_repeat": "no-repeat",
+        "e_pos": "center center",
+        "title_top": "Faqs",
+        "title": "Frequently Asked Questions",
+        "des": "",
+        "align-heading": "left",
+        "title_size": "h4",
+        "e_first_open": true,
+        "e_reverse": true,
+        "e_small": false,
+        "left_html": "",
+        "e_right": true,
+        "image_right": "shopify://shop_images/faq-img.jpg",
+        "paddingsection": "80px 0px 80px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "1660925094098c539e": {
+      "type": "instagram-customize",
+      "blocks": {
+        "1660925094098c539e-0": {
+          "type": "image",
+          "settings": {
+            "image_link": "https://www.instagram.com/p/Cu3wKNqvfPG/"
+          }
+        },
+        "1660925094098c539e-1": {
+          "type": "image",
+          "settings": {
+            "image_link": "https://www.instagram.com/p/CuyrWWgPTY6/"
+          }
+        },
+        "6ecfa747-1624-47c4-8967-277d3c819672": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/aabbcacc033f492eb4f2732216fbe7d9.mp4",
+            "image_link": "https://www.instagram.com/reel/CcSe0EiKaL4/",
+            "enable_play_video": true
+          }
+        },
+        "1660925094098c539e-4": {
+          "type": "image",
+          "settings": {
+            "image_link": "https://www.instagram.com/p/CtQ1RAMvvGv/"
+          }
+        },
+        "1660925094098c539e-2": {
+          "type": "image",
+          "settings": {
+            "image_link": "https://www.instagram.com/p/CueN3LZPQYA/"
+          }
+        },
+        "1660925094098c539e-3": {
+          "type": "image",
+          "settings": {
+            "image_link": "#"
+          }
+        },
+        "a3a10629-8bb5-4700-b3af-1c908798381a": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/42a9e75219f6412ab5309312b07982a6.mp4",
+            "image_link": "https://www.instagram.com/p/CT1byDeliOs/",
+            "enable_play_video": false
+          }
+        },
+        "1660925094098c539e-5": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "1660925094098c539e-0",
+        "1660925094098c539e-1",
+        "6ecfa747-1624-47c4-8967-277d3c819672",
+        "1660925094098c539e-4",
+        "1660925094098c539e-2",
+        "1660925094098c539e-3",
+        "a3a10629-8bb5-4700-b3af-1c908798381a",
+        "1660925094098c539e-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "full",
+        "bgsection": "#ffffff",
+        "title_top": "",
+        "title": "",
+        "des": "",
+        "align-heading": "center",
+        "image_size": "square",
+        "enable_carousel": true,
+        "arrows": false,
+        "draggable": true,
+        "dots": true,
+        "infinite": true,
+        "column": 6,
+        "show": 6,
+        "padding": true,
+        "gutter_padding": 2,
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "0px 0px 30px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
       }
     }
   },
   "order": [
-    "gbl_hero_rCzgxM",
-    "gbl_jewelry_categories_fkYjxE",
-    "gbl_featured_products_V4gKBn",
-    "gbl_product_spotlight_AdBkVn",
-    "gbl_bestsellers_FNCmrG",
-    "gbl_service_highlights_WtDcXy",
-    "gbl_testimonial_VGTGfB",
-    "1730568178bbb7af4c",
-    "173056829987e9d4ab",
-    "1731735866bf83c57d"
+    "42c9748e-ce08-4187-92e7-c4e3c162c249",
+    "92f0a295-b138-41fa-9620-bf11ee35918a",
+    "product_tab_KnDJEt",
+    "product_list_czMgWQ",
+    "16485444103c52f5e9",
+    "96713abe-b110-4f66-82c4-233305af1faf",
+    "48a9fffb-7b1f-4bc5-9e0b-4f19556846d2",
+    "705146a2-5b6c-4449-8de7-345077567130",
+    "c92b6d28-25d1-477b-920a-d657bf443761",
+    "9614dbf0-b77a-4edf-b0a3-08bea8f76dee",
+    "product_list_rMPrEt",
+    "662cf23c-2a28-41c4-9bd8-b6517c99ba49",
+    "811a6110-0ea8-4aca-b4ad-843c1574e2f6",
+    "e2e754bf-d47e-4ef9-8fd7-1ced7e029d74",
+    "3fb03ff7-25ae-4f7b-8179-3e29c80906fd",
+    "5e6d27a3-1163-46d3-a128-345487900584",
+    "1660925094098c539e"
   ]
 }
