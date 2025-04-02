@@ -123,7 +123,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": true,
     "cart_drawer_collection": "bestselling",
@@ -147,11 +147,11 @@
           "announcement_text": "Call to Place your Order",
           "phone_number": "+447584828264",
           "search_placeholder": "Search here",
-          "background_color": "#FFFFFF",
+          "background_color": "#ffffff",
           "text_color": "#000000",
           "icon_color": "#000000",
-          "count_background": "#D2232A",
-          "count_color": "#FFFFFF"
+          "count_background": "#d2232a",
+          "count_color": "#ffffff"
         }
       },
       "gbl-header": {
