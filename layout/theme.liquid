@@ -28,27 +28,42 @@
     {%- endif -%}
 
     <title>
-      {{ page_title }}
+      {% if product %}
+        {{ product.title }} | {{ shop.name }}
+      {% elsif collection %}
+        {{ collection.title }} | {{ shop.name }}
+      {% elsif blog %}
+        {{ blog.title }} | {{ shop.name }}
+      {% elsif article %}
+        {{ article.title }} | {{ shop.name }}
+      {% else %}
+        {{ page_title }}
+      {% endif %}
       {% if current_tags %}
         {% assign meta_tags = current_tags | join: ', ' %}
-        &ndash;
-        {{ 'general.meta.tags' | t: tags: meta_tags }}
+        &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}
       {% endif %}
       {% if current_page != 1 %}
-        &ndash;
-        {{ 'general.meta.page' | t: page: current_page }}
+        &ndash; {{ 'general.meta.page' | t: page: current_page }}
       {% endif %}
       {% unless page_title contains shop.name %}
         &ndash;
         {{ shop.name }}
       {% endunless %}
     </title>
-   
-    {%- if page_description -%}
-      <meta name="description" content="{{ page_description | escape }}">
-      {% else %}
+
+    {% if product %}
+      <meta name="description" content="{{ product.description | strip_html | truncate: 160 }}">
+    {% elsif collection %}
+      <meta name="description" content="{{ collection.description | strip_html | truncate: 160 }}">
+    {% elsif blog %}
+      <meta name="description" content="{{ blog.description | strip_html | truncate: 160 }}">
+    {% elsif article %}
+      <meta name="description" content="{{ article.excerpt | strip_html | truncate: 160 }}">
+    {% else %}
       <meta name="description" content="{{ settings.meta_description | escape }}">
-    {%- endif -%}
+    {% endif %}
+
     
     {%- render 'social-meta-tags' -%}
     {%- render 'header-css' -%}
