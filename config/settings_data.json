@@ -127,10 +127,10 @@
     "sidebar_post_limit": 3,
     "sidebar_html_title": "",
     "sidebar_html": "<a href=\"#\"> <img class=\"lybn-lazyload lazyload\" alt=\"banner blog\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0781/3637/7664/files/169699320_203975937820072_6948305125395007791_n.jpg?v=1691255806\">\n</a>",
-    "enable_compare": true,
+    "enable_compare": false,
     "enable_wishlsit": true,
     "page_wishlist": "wish-list",
-    "enable_popuptext": true,
+    "enable_popuptext": false,
     "enable_popuptext_new": "Get 15% Off",
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": true,
@@ -2457,6 +2457,16 @@
       },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "5515809131802108258": {
+        "type": "shopify://apps/google-analytics-4-ga4/blocks/google-analytics-4/25a47c90-9437-4f66-918c-3c9a15d7897f",
+        "disabled": false,
+        "settings": {}
+      },
+      "4215564508307704909": {
+        "type": "shopify://apps/sitemap-noindex-pro-seo/blocks/app-embed/4d815e2c-5af0-46ba-8301-d0f9cf660031",
         "disabled": false,
         "settings": {}
       }

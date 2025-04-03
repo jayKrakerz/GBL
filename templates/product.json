@@ -137,6 +137,7 @@
         },
         "13c388e5-8dd3-4462-9284-ec3f2c9aabc6": {
           "type": "salepoint",
+          "disabled": true,
           "settings": {
             "icon": "shield",
             "free_word": "2 Year Warranty"
@@ -144,6 +145,7 @@
         },
         "salepoint_WxRA3W": {
           "type": "salepoint",
+          "disabled": true,
           "settings": {
             "icon": "ribbon",
             "free_word": "600,000 happy customers"
@@ -209,7 +211,6 @@
         },
         "2d534ed0-517d-48ca-8370-8659965f32c4": {
           "type": "share",
-          "disabled": true,
           "settings": {}
         },
         "a405ef88-bdbe-486d-9fb3-6c91aa4e1509": {
