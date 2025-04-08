@@ -1,17 +1,18 @@
-<!-- /snippets/social-sharing.liquid -->
 <div class="social-sharing d-flex align-items-center">
-  <div class=" {% if center_icons %}text-center{% else %}text-left{% endif %} d-flex">
+  <div class="{% if center_icons %}text-center{% else %}text-left{% endif %} d-flex flex-wrap gap-2">
+
     {% if settings.share_facebook %}
-    <a target="_blank" href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}"  class="social-sharing__link share-facebook" title="{{ 'general.social.alt_text.share_on_facebook' | t }}">
+    <a target="_blank" href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}" class="social-sharing__link share-facebook" title="{{ 'general.social.alt_text.share_on_facebook' | t }}">
       {% render 'icon-facebook' %}
-      <span class="share-title ">{{ 'general.social.alt_text.share_on_facebook' | t }}</span>
+      <span class="share-title">{{ 'general.social.alt_text.share_on_facebook' | t }}</span>
     </a>
     {% endif %}
 
+    {% comment %}
     {% if settings.share_twitter %}
-    <a target="_blank" href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}"  class="social-sharing__link share-twitter" title="{{ 'general.social.alt_text.share_on_twitter' | t }}">
+    <a target="_blank" href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}" class="social-sharing__link share-twitter" title="{{ 'general.social.alt_text.share_on_twitter' | t }}">
       {% render 'icon-twitter' %}
-      <span class="share-title ">{{ 'general.social.alt_text.share_on_twitter' | t }}</span>
+      <span class="share-title">{{ 'general.social.alt_text.share_on_twitter' | t }}</span>
     </a>
     {% endif %}
 
@@ -21,5 +22,87 @@
       <span class="share-title">{{ 'general.social.alt_text.share_on_pinterest' | t }}</span>
     </a>
     {% endif %}
+    {% endcomment %}
+
+    {% comment %}
+    <!-- TikTok -->
+    <a target="_blank" href="https://www.tiktok.com/@yourusername" class="social-sharing__link share-tiktok" title="Share on TikTok">
+      {% render 'icon-tiktok' %}
+      <span class="share-title">TikTok</span>
+    </a>
+
+    <!-- Instagram -->
+    <a target="_blank" href="https://www.instagram.com/yourusername/" class="social-sharing__link share-instagram" title="View on Instagram">
+      {% render 'icon-instagram' %}
+      <span class="share-title">Instagram</span>
+    </a>
+    {% endcomment %}
+
+    <!-- WhatsApp -->
+    <a target="_blank" href="https://api.whatsapp.com/send?text={{ share_title | url_param_escape }}%20{{ shop.url | append: share_permalink }}" class="social-sharing__link share-whatsapp" title="Share on WhatsApp">
+      {% render 'icon-whatsapp' %}
+      <span class="share-title">WhatsApp</span>
+    </a>
+
+    <!-- Copy Link -->
+    <a href="#" class="social-sharing__link share-copy" onclick="copyToClipboard('{{ shop.url | append: share_permalink }}'); return false;" title="Copy link">
+      {% render 'icon-link' %}
+      <span class="share-title">Copy Link</span>
+    </a>
+
   </div>
 </div>
+
+<style>
+  .custom-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background-color: #000;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 9999;
+  }
+
+  .custom-toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  svg {
+    margin-right: 8px;
+}
+</style>
+
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function () {
+      showToast("Link copied to clipboard!");
+    }, function (err) {
+      console.error('Could not copy text: ', err);
+    });
+  }
+
+  function showToast(message) {
+    const toast = document.createElement('div');
+    toast.className = 'custom-toast';
+    toast.textContent = message;
+    document.body.appendChild(toast);
+
+    // Trigger appearance
+    setTimeout(() => {
+      toast.classList.add('show');
+    }, 100);
+
+    // Hide and remove
+    setTimeout(() => {
+      toast.classList.remove('show');
+      setTimeout(() => toast.remove(), 300);
+    }, 3000);
+  }
+</script>

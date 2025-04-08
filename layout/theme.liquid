@@ -29,39 +29,37 @@
 
     <title>
       {% if product %}
-        {{ product.title }} | {{ shop.name }}
+        {{ product.title }} – Premium Non-Tarnish Gold-Plated Jewelry | GBL Accessories UK
       {% elsif collection %}
-        {{ collection.title }} | {{ shop.name }}
+        {{ collection.title }} – Shop High-Quality Gold Jewelry | GBL Accessories
       {% elsif blog %}
-        {{ blog.title }} | {{ shop.name }}
+        {{ blog.title }} – Elegant & Durable Gold-Plated Insights | GBL Accessories
       {% elsif article %}
-        {{ article.title }} | {{ shop.name }}
+        {{ article.title }} – Discover Gold Jewelry Trends | GBL Accessories UK
       {% else %}
-        {{ page_title }}
+        {{ page_title }} – Luxury Non-Tarnish Jewelry | GBL Accessories
       {% endif %}
+
       {% if current_tags %}
         {% assign meta_tags = current_tags | join: ', ' %}
-        &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}
+        – {{ 'general.meta.tags' | t: tags: meta_tags }}
       {% endif %}
+
       {% if current_page != 1 %}
-        &ndash; {{ 'general.meta.page' | t: page: current_page }}
+        – {{ 'general.meta.page' | t: page: current_page }}
       {% endif %}
-      {% unless page_title contains shop.name %}
-        &ndash;
-        {{ shop.name }}
-      {% endunless %}
     </title>
 
     {% if product %}
-      <meta name="description" content="{{ product.description | strip_html | truncate: 160 }}">
+      <meta name="description" content="Discover {{ product.title }} at GBL Accessories – high-quality, non-tarnish gold-plated jewelry perfect for any occasion. Shop now!">
     {% elsif collection %}
-      <meta name="description" content="{{ collection.description | strip_html | truncate: 160 }}">
+      <meta name="description" content="Explore our {{ collection.title }} collection – elegant, non-tarnish gold-plated jewelry designed for durability and style.">
     {% elsif blog %}
-      <meta name="description" content="{{ blog.description | strip_html | truncate: 160 }}">
+      <meta name="description" content="{{ blog.title }} – Stay inspired with the latest jewelry stories, styling tips, and gold trends from GBL Accessories.">
     {% elsif article %}
       <meta name="description" content="{{ article.excerpt | strip_html | truncate: 160 }}">
     {% else %}
-      <meta name="description" content="{{ settings.meta_description | escape }}">
+      <meta name="description" content="GBL Accessories is your trusted UK store for high-quality, non-tarnish gold-plated jewelry. Elegant, durable, and affordable – shop now.">
     {% endif %}
 
     
@@ -72,6 +70,24 @@
       <link rel="preload" href="{{ 'swiper-bundle.min.js' | asset_url }}" as="script">
       <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P8GXVGJ7');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-82KW8S6211"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-82KW8S6211');
+    </script>
   </head>
   <body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} body-theme {% if settings.productpage == 'product-2' or settings.productpage == 'product-6' or settings.productpage == 'product-7' %} product-hide-breadcrumb {% endif %}">
    {% assign lazy = false %}
@@ -113,6 +129,11 @@
       render 'popup-compare' 
       render 'header-js' 
     -%}
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8GXVGJ7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
    
   </body>
 </html>
